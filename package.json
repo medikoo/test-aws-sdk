@@ -1,0 +1,56 @@
+{
+	"name": "test-aws-sdk",
+	"version": "0.0.0",
+	"description": "Test AWS SDK",
+	"author": "Mariusz Nowak <medyk@medikoo.com> (https://www.medikoo.com/)",
+	"repository": "medikoo/test-aws-sdk",
+	"devDependencies": {
+		"eslint": "^6.8.0",
+		"eslint-config-medikoo": "^2.7.0",
+		"git-list-updated": "^1.2.1",
+		"husky": "^4.0.0",
+		"lint-staged": "^9.5.0",
+		"prettier-elastic": "^1.19.1",
+		"standard-version": "^7.0.1"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.js": [
+			"eslint"
+		],
+		"*.{css,html,js,json,md,yaml,yml}": [
+			"prettier -c"
+		]
+	},
+	"eslintConfig": {
+		"extends": "medikoo/node",
+		"root": true
+	},
+	"prettier": {
+		"printWidth": 100,
+		"tabWidth": 4,
+		"overrides": [
+			{
+				"files": [
+					"*.md"
+				],
+				"options": {
+					"tabWidth": 2
+				}
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint --ignore-path=.gitignore .",
+		"lint:updated": "pipe-git-updated --ext=js -- eslint --ignore-pattern '!*'",
+		"prettier-check": "prettier -c --ignore-path .gitignore \"**/*.{css,html,js,json,md,yaml,yml}\"",
+		"prettier-check:updated": "pipe-git-updated --ext=css --ext=html --ext=js --ext=json --ext=md --ext=yaml --ext=yml -- prettier -c",
+		"prettify": "prettier --write --ignore-path .gitignore \"**/*.{css,html,js,json,md,yaml,yml}\"",
+		"prettify:updated": "pipe-git-updated --ext=css --ext=html --ext=js --ext=json --ext=md --ext=yaml --ext=yml -- prettier --write"
+	},
+	"license": "ISC"
+}
