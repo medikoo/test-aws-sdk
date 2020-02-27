@@ -6,7 +6,11 @@
 	"repository": "medikoo/test-aws-sdk",
 	"dependencies": {
 		"aws-sdk": "^2.598.0",
-		"essentials": "^1.1.1"
+		"essentials": "^1.1.1",
+		"log": "^6.0.0",
+		"log-node": "^7.0.0",
+		"memoizee": "^0.4.14",
+		"timers-ext": "^0.1.7"
 	},
 	"devDependencies": {
 		"eslint": "^6.8.0",
@@ -33,6 +37,9 @@
 	"eslintConfig": {
 		"extends": "medikoo/node",
 		"root": true,
+		"parserOptions": {
+			"ecmaVersion": 2018
+		},
 		"rules": {
 			"no-console": "off"
 		}
