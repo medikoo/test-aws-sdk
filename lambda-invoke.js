@@ -4,9 +4,6 @@ require("./init");
 
 const AWS = require("aws-sdk");
 
-const lambda = new AWS.Lambda({ region: "us-east-1" });
+const lambda = new AWS.Lambda({ region: process.env.AWS_REGION });
 
-lambda
-	.invoke({ FunctionName: "plugin-test-0fa3-dev-sync" })
-	.promise()
-	.then(result => { console.log(result); });
+lambda.invoke({ FunctionName: process.argv[2] }).promise().then(result => { console.log(result); });

@@ -4,9 +4,9 @@ require("./init");
 
 const AWS = require("aws-sdk");
 
-const lambda = new AWS.Lambda({ region: "us-east-1" });
+const lambda = new AWS.Lambda({ region: process.env.AWS_REGION });
 
 lambda
-	.invoke({ FunctionName: "test-lambda-destinations-dev-function", InvocationType: "Event" })
+	.invoke({ FunctionName: process.argv[2], InvocationType: "Event" })
 	.promise()
 	.then(result => { console.log(result); });

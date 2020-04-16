@@ -7,7 +7,7 @@ const wait = require("timers-ext/promise/sleep");
 
 const getServiceInstance = memoizee(
 	nameInput => {
-		const params = { region: "us-east-1", ...nameInput.params };
+		const params = { region: process.env.AWS_REGION, ...nameInput.params };
 		const name = typeof nameInput === "string" ? nameInput : nameInput.name;
 		const Service = AWS[name];
 		return new Service(params);

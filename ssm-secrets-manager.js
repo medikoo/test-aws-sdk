@@ -1,11 +1,10 @@
 "use strict";
 
-require("essentials");
-process.env.AWS_PROFILE = "test";
+require("./init");
 
 const AWS = require("aws-sdk");
 
-const ssm = new AWS.SSM({ region: "us-east-1" });
+const ssm = new AWS.SSM({ region: process.env.AWS_REGION });
 
 const secretName = "test-rds-secret";
 
