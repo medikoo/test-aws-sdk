@@ -6,6 +6,7 @@
 	"repository": "medikoo/test-aws-sdk",
 	"dependencies": {
 		"aws-sdk": "^2.598.0",
+		"dotenv": "^8.2.0",
 		"essentials": "^1.1.1",
 		"log": "^6.0.0",
 		"log-node": "^7.0.0",
