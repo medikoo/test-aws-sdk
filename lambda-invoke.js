@@ -1,8 +1,6 @@
 "use strict";
 
-require("essentials");
-
-process.env.AWS_PROFILE = "test";
+require("./init");
 
 const AWS = require("aws-sdk");
 
