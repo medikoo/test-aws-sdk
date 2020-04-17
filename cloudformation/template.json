@@ -1,0 +1,26 @@
+{
+	"AWSTemplateFormatVersion": "2010-09-09",
+	"Resources": {
+		"HttpApi": {
+			"Type": "AWS::ApiGatewayV2::Api",
+			"Properties": { "Name": "permissions-error-test", "ProtocolType": "HTTP" }
+		},
+		"HttpApiLogGroup": {
+			"Type": "AWS::Logs::LogGroup",
+			"Properties": { "LogGroupName": "/aws/http-api/permissions-error-test" }
+		},
+		"Stage": {
+			"Type": "AWS::ApiGatewayV2::Stage",
+			"Properties": {
+				"ApiId": { "Ref": "HttpApi" },
+				"StageName": "$default",
+				"AutoDeploy": true,
+				"AccessLogSettings": {
+					"DestinationArn": { "Fn::GetAtt": ["HttpApiLogGroup", "Arn"] },
+					"Format": "{{\"requestId\":\"$context.requestId\",\"ip\":\"$context.identity.sourceIp\",\"requestTime\":\"$context.requestTime\",\"httpMethod\":\"$context.httpMethod\",\"routeKey\":\"$context.routeKey\",\"status\":\"$context.status\",\"protocol\":\"$context.protocol\",\"responseLength\":\"$context.responseLength\"}}"
+				}
+			},
+			"DependsOn": "HttpApiLogGroup"
+		}
+	}
+}
