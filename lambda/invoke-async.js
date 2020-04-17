@@ -1,6 +1,6 @@
 "use strict";
 
-require("./init");
+require("../init");
 
 const AWS = require("aws-sdk");
 
