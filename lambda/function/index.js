@@ -1,6 +1,9 @@
 "use strict";
 
-module.exports.handler = () => {
-	setTimeout(() => console.log("TIMEOUT"), 5950).unref();
-	console.log("DID IT");
+module.exports.handler = {
+	other: (event, context, callback) => {
+		require("aws-sdk");
+		console.log("DID IT");
+		callback(null, { statusCode: 200, body: JSON.stringify({ message: "hello world" }) });
+	}
 };

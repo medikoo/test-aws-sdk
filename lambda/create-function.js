@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 "use strict";
 
 require("../init");
@@ -13,7 +15,7 @@ const lambda = new AWS.Lambda({ region: process.env.AWS_REGION });
 			.createFunction({
 				Code: { ZipFile: await resolveFunctionZipBuffer() },
 				FunctionName: process.argv[2],
-				Handler: "index.handler",
+				Handler: "index.handler.other",
 				Role: process.env.AWS_IAM_ROLE,
 				Runtime: "nodejs12.x"
 			})
