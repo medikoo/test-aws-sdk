@@ -3,3 +3,4 @@
 npm-debug.log
 /package-lock.json
 /cognito/env.json
+/ec2/*.pem
