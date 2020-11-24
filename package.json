@@ -5,7 +5,7 @@
 	"author": "Mariusz Nowak <medyk@medikoo.com> (https://www.medikoo.com/)",
 	"repository": "medikoo/test-aws-sdk",
 	"dependencies": {
-		"adm-zip": "^0.4.14",
+		"adm-zip": "^0.5.0",
 		"aws-sdk": "^2.598.0",
 		"dotenv": "^8.2.0",
 		"essentials": "^1.1.1",
@@ -16,12 +16,11 @@
 	},
 	"devDependencies": {
 		"eslint": "^7.0.0",
-		"eslint-config-medikoo": "^3.0.1",
+		"eslint-config-medikoo": "^4.0.0",
 		"git-list-updated": "^1.2.1",
 		"husky": "^4.0.0",
 		"lint-staged": "^10.2.4",
-		"prettier-elastic": "^1.19.1",
-		"standard-version": "^8.0.0"
+		"prettier-elastic": "^2.1.2"
 	},
 	"husky": {
 		"hooks": {
