@@ -2,8 +2,9 @@
 
 module.exports.handler = {
 	other: (event, context, callback) => {
-		require("aws-sdk");
-		console.log("DID IT");
-		callback(null, { statusCode: 200, body: JSON.stringify({ message: "hello world" }) });
+		callback(null, {
+			statusCode: 200,
+			body: JSON.stringify({ dirname: __dirname, filename: __filename })
+		});
 	}
 };
