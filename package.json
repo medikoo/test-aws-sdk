@@ -7,10 +7,10 @@
 	"dependencies": {
 		"adm-zip": "^0.5.0",
 		"aws-sdk": "^2.598.0",
-		"dotenv": "^8.2.0",
+		"dotenv": "^10.0.0",
 		"essentials": "^1.1.1",
 		"log": "^6.0.0",
-		"log-node": "^7.0.0",
+		"log-node": "^8.0.1",
 		"memoizee": "^0.4.14",
 		"timers-ext": "^0.1.7"
 	},
@@ -38,9 +38,6 @@
 	"eslintConfig": {
 		"extends": "medikoo/node",
 		"root": true,
-		"parserOptions": {
-			"ecmaVersion": 2018
-		},
 		"rules": {
 			"no-console": "off"
 		}
