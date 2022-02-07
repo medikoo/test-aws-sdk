@@ -17,7 +17,7 @@ const lambda = new AWS.Lambda({ region: process.env.AWS_REGION });
 				FunctionName: process.argv[2],
 				Handler: "index.handler",
 				Role: process.env.AWS_IAM_ROLE,
-				Runtime: "nodejs12.x"
+				Runtime: "nodejs14.x"
 			})
 			.promise()
 	);
