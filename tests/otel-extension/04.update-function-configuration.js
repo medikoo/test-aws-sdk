@@ -18,7 +18,9 @@ const lambda = new Lambda({ region: process.env.AWS_REGION });
 			FunctionName: `${ config.functionNamePrefix }-${ process.argv[2] }`,
 			Environment: {
 				Variables: {
-					// AWS_LAMBDA_EXEC_WRAPPER: "/var/task/internal-extension.sh"
+					AWS_LAMBDA_EXEC_WRAPPER: "/opt/otel-extension/otel-handler",
+					SLS_OTEL_REPORT_TYPE: "json",
+					SLS_OTEL_REPORT_S3_BUCKET: "lambda-otel-extension-tests"
 				}
 			},
 			Layers: [layerVersionArn]

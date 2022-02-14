@@ -4,3 +4,4 @@ npm-debug.log
 /package-lock.json
 /cognito/env.json
 /ec2/*.pem
+/tests/otel-extension/extension.zip

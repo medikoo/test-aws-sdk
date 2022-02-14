@@ -2,7 +2,7 @@
 
 "use strict";
 
-process._rawDebug("EE", "init");
+process._rawDebug("EE", "init", process.version, process.env);
 
 process.on("SIGINT", () => () => {
 	process._rawDebug("EE", "shutdown", "SIGINT");
@@ -69,7 +69,8 @@ const reportEmitter = new EventEmitter();
 				process._rawDebug("EE", "logs input end", body);
 				const data = JSON.parse(body);
 				if (data.find(event => event.type === "platform.runtimeDone")) {
-					process._rawDebug("EE", "emit report");
+					reportEmitter.emit("runtimeDone");
+				} else if (data.find(event => event.type === "platform.report")) {
 					reportEmitter.emit("report");
 				}
 				response.writeHead(200, {});
@@ -164,11 +165,15 @@ const reportEmitter = new EventEmitter();
 		});
 		switch (event.eventType) {
 			case "SHUTDOWN":
-				setTimeout(() => { process.exit(0); }, 1900);
+				{
+					// Hold process untill all logs are provided
+					const timer = setTimeout(() => { /* noop */ }, 1000 * 60);
+					reportEmitter.once("report", () => clearTimeout(timer));
+				}
 				return;
 			case "INVOKE":
 				await new Promise(resolve => {
-					reportEmitter.once("report", () => resolve(waitForEvent()));
+					reportEmitter.once("runtimeDone", () => resolve(waitForEvent()));
 				});
 				break;
 			default:
