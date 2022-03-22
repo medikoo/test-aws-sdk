@@ -19,6 +19,8 @@ const lambda = new Lambda({ region: process.env.AWS_REGION });
 			Environment: {
 				Variables: {
 					AWS_LAMBDA_EXEC_WRAPPER: "/opt/otel-extension/otel-handler",
+					OTEL_LOG_LEVEL: "ALL",
+					DEBUG: "*",
 					SLS_OTEL_REPORT_TYPE: "json",
 					SLS_OTEL_REPORT_S3_BUCKET: "lambda-otel-extension-tests"
 				}

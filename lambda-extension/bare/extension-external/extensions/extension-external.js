@@ -4,6 +4,10 @@
 
 process._rawDebug("EE", "init", process.version, process.env);
 
+const dns = require("dns");
+dns.lookup("localhost", (err, result) => { process._rawDebug("EE", "DNS: localhost", result); });
+dns.lookup("sandbox", (err, result) => { process._rawDebug("EE", "DNS: sandbox", result); });
+
 process.on("SIGINT", () => () => {
 	process._rawDebug("EE", "shutdown", "SIGINT");
 	process.exit(0);
@@ -66,7 +70,7 @@ const reportEmitter = new EventEmitter();
 			let body = "";
 			request.on("data", data => { body += data; });
 			request.on("end", () => {
-				process._rawDebug("EE", "logs input end", body);
+				process._rawDebug("EE", "logs input end", body, Date.now());
 				const data = JSON.parse(body);
 				if (data.find(event => event.type === "platform.runtimeDone")) {
 					reportEmitter.emit("runtimeDone");
@@ -155,7 +159,7 @@ const reportEmitter = new EventEmitter();
 					let result = "";
 					response.on("data", chunk => { result += String(chunk); });
 					response.on("end", () => {
-						process._rawDebug("EE", "next response end", result);
+						process._rawDebug("EE", "next response end", result, Date.now());
 						resolve(JSON.parse(result));
 					});
 				}
@@ -167,7 +171,9 @@ const reportEmitter = new EventEmitter();
 			case "SHUTDOWN":
 				{
 					// Hold process untill all logs are provided
-					const timer = setTimeout(() => { /* noop */ }, 1000 * 60);
+					const timer = setTimeout(() => {
+						process._rawDebug("EE", "timer called", Date.now());
+					}, 1000 * 60);
 					reportEmitter.once("report", () => clearTimeout(timer));
 				}
 				return;

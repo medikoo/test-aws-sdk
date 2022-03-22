@@ -4,8 +4,8 @@ process._rawDebug("F", "init");
 console.log("F", "regular log at init");
 
 module.exports.handler = (event, context, callback) => {
-	process._rawDebug("F", "invocation");
-	console.log("F", "regular log at invocation");
+	process._rawDebug("F", "invocation\nmultiline");
+	console.log("F", "regular log at invocation\nmultiline");
 	setTimeout(() => {
 		process._rawDebug("F", "return");
 		callback(null, {
