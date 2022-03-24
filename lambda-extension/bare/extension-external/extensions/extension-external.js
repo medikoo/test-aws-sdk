@@ -25,6 +25,7 @@ const baseUrl = `http://${ process.env.AWS_LAMBDA_RUNTIME_API }/2020-01-01/exten
 const reportEmitter = new EventEmitter();
 
 (async () => {
+	// Register extension
 	const extensionIndentifier = await new Promise((resolve, reject) => {
 		const postData = JSON.stringify({ events: ["INVOKE", "SHUTDOWN"] });
 		const request = http.request(
@@ -62,6 +63,7 @@ const reportEmitter = new EventEmitter();
 		request.end();
 	});
 
+	// Setup a logs listener server
 	http.createServer((request, response) => {
 		process._rawDebug(
 			"EE", "logs input start", new Date().toISOString(), request.method, request.headers
@@ -86,6 +88,7 @@ const reportEmitter = new EventEmitter();
 		}
 	}).listen(4243, "sandbox");
 
+	// Subscribe to logs
 	await new Promise((resolve, reject) => {
 		process._rawDebug("EE", "logs subscribe start");
 		const putData = JSON.stringify({
@@ -133,6 +136,7 @@ const reportEmitter = new EventEmitter();
 		request.end();
 	});
 
+	// Events lifecycle handler
 	const waitForEvent = async () => {
 		const event = await new Promise((resolve, reject) => {
 			process._rawDebug("EE", "next start");
