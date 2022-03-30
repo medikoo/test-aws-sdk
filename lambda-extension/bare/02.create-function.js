@@ -2,6 +2,8 @@
 
 "use strict";
 
+if (!process.argv[2]) throw new Error("Function name not provided");
+
 require("../../init");
 
 const path                     = require("path")
@@ -27,9 +29,7 @@ const lambda = new Lambda({ region: process.env.AWS_REGION });
 			Role: process.env.AWS_IAM_ROLE,
 			Runtime: "nodejs14.x",
 			Environment: {
-				Variables: {
-					// AWS_LAMBDA_EXEC_WRAPPER: "/var/task/internal-extension.js"
-				}
+				Variables: { AWS_LAMBDA_EXEC_WRAPPER: "/opt/internal/exec-wrapper.sh" }
 			},
 			Layers: layerVersionArn ? [layerVersionArn] : []
 		})

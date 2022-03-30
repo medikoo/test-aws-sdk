@@ -15,11 +15,7 @@ const lambda = new Lambda({ region: process.env.AWS_REGION });
 	console.log(
 		await lambda.publishLayerVersion({
 			LayerName: config.layerName,
-			Content: {
-				ZipFile: await resolveFunctionZipBuffer(
-					path.resolve(__dirname, "./extension-external")
-				)
-			}
+			Content: { ZipFile: await resolveFunctionZipBuffer(path.resolve(__dirname, "./opt")) }
 		})
 	);
 })();

@@ -2,18 +2,18 @@
 
 "use strict";
 
-process._rawDebug("EE", "init", process.version, process.env);
+process._rawDebug("E", "init", process.version, process.env);
 
 const dns = require("dns");
-dns.lookup("localhost", (err, result) => { process._rawDebug("EE", "DNS: localhost", result); });
-dns.lookup("sandbox", (err, result) => { process._rawDebug("EE", "DNS: sandbox", result); });
+dns.lookup("localhost", (err, result) => { process._rawDebug("E", "DNS: localhost", result); });
+dns.lookup("sandbox", (err, result) => { process._rawDebug("E", "DNS: sandbox", result); });
 
 process.on("SIGINT", () => () => {
-	process._rawDebug("EE", "shutdown", "SIGINT");
+	process._rawDebug("E", "shutdown", "SIGINT");
 	process.exit(0);
 });
 process.on("SIGTERM", () => {
-	process._rawDebug("EE", "shutdown", "SIGTERM");
+	process._rawDebug("E", "shutdown", "SIGTERM");
 	process.exit(0);
 });
 
@@ -40,7 +40,7 @@ const reportEmitter = new EventEmitter();
 			},
 			response => {
 				process._rawDebug(
-					"EE", "register reponse start", response.statusCode, response.headers
+					"E", "register reponse start", response.statusCode, response.headers
 				);
 				if (response.statusCode !== 200) {
 					// TODO: Report propery extension crash
@@ -53,7 +53,7 @@ const reportEmitter = new EventEmitter();
 				let result = "";
 				response.on("data", chunk => { result += String(chunk); });
 				response.on("end", () => {
-					process._rawDebug("EE", "register reponse end", result);
+					process._rawDebug("E", "register reponse end", result);
 					resolve(response.headers["lambda-extension-identifier"]);
 				});
 			}
@@ -66,13 +66,13 @@ const reportEmitter = new EventEmitter();
 	// Setup a logs listener server
 	http.createServer((request, response) => {
 		process._rawDebug(
-			"EE", "logs input start", new Date().toISOString(), request.method, request.headers
+			"E", "logs input start", new Date().toISOString(), request.method, request.headers
 		);
 		if (request.method === "POST") {
 			let body = "";
 			request.on("data", data => { body += data; });
 			request.on("end", () => {
-				process._rawDebug("EE", "logs input end", body, Date.now());
+				process._rawDebug("E", "logs input end", body, Date.now());
 				const data = JSON.parse(body);
 				if (data.find(event => event.type === "platform.runtimeDone")) {
 					reportEmitter.emit("runtimeDone");
@@ -90,7 +90,7 @@ const reportEmitter = new EventEmitter();
 
 	// Subscribe to logs
 	await new Promise((resolve, reject) => {
-		process._rawDebug("EE", "logs subscribe start");
+		process._rawDebug("E", "logs subscribe start");
 		const putData = JSON.stringify({
 			destination: { protocol: "HTTP", URI: "http://sandbox:4243" },
 			types: ["platform", "function"],
@@ -109,13 +109,13 @@ const reportEmitter = new EventEmitter();
 			},
 			response => {
 				process._rawDebug(
-					"EE", "logs subscribe response start", response.statusCode, response.headers
+					"E", "logs subscribe response start", response.statusCode, response.headers
 				);
 				response.setEncoding("utf8");
 				let result = "";
 				response.on("data", chunk => { result += String(chunk); });
 				response.on("end", () => {
-					process._rawDebug("EE", "logs subscribe response end", result);
+					process._rawDebug("E", "logs subscribe response end", result);
 					if (response.statusCode === 200) {
 						resolve();
 					} else {
@@ -139,7 +139,7 @@ const reportEmitter = new EventEmitter();
 	// Events lifecycle handler
 	const waitForEvent = async () => {
 		const event = await new Promise((resolve, reject) => {
-			process._rawDebug("EE", "next start");
+			process._rawDebug("E", "next start");
 			const request = http.request(
 				`${ baseUrl }/event/next`,
 				{
@@ -151,7 +151,7 @@ const reportEmitter = new EventEmitter();
 				},
 				response => {
 					process._rawDebug(
-						"EE", "next response start", response.statusCode, response.headers
+						"E", "next response start", response.statusCode, response.headers
 					);
 					if (response.statusCode !== 200) {
 						// TODO: Report propery extension crash
@@ -163,7 +163,7 @@ const reportEmitter = new EventEmitter();
 					let result = "";
 					response.on("data", chunk => { result += String(chunk); });
 					response.on("end", () => {
-						process._rawDebug("EE", "next response end", result, Date.now());
+						process._rawDebug("E", "next response end", result, Date.now());
 						resolve(JSON.parse(result));
 					});
 				}
@@ -176,7 +176,7 @@ const reportEmitter = new EventEmitter();
 				{
 					// Hold process untill all logs are provided
 					const timer = setTimeout(() => {
-						process._rawDebug("EE", "timer called", Date.now());
+						process._rawDebug("E", "timer called", Date.now());
 					}, 1000 * 60);
 					reportEmitter.once("report", () => clearTimeout(timer));
 				}
@@ -192,6 +192,6 @@ const reportEmitter = new EventEmitter();
 	};
 	await waitForEvent();
 })().catch(error => {
-	process._rawDebug("EE", "setup crash");
+	process._rawDebug("E", "setup crash");
 	process.nextTick(() => { throw error; });
 });

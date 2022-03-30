@@ -2,6 +2,8 @@
 
 "use strict";
 
+if (!process.argv[2]) throw new Error("Function name not provided");
+
 require("../../init");
 
 const path                     = require("path")

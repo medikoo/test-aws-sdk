@@ -44,11 +44,29 @@
 			"/lambda/runtimes/**/*.js"
 		],
 		"rules": {
+			"eqeqeq": [
+				"error",
+				"always",
+				{
+					"null": "ignore"
+				}
+			],
 			"max-lines": "off",
 			"no-await-in-loop": "off",
 			"no-console": "off",
+			"no-eq-null": "off",
 			"no-loop-func": "off"
-		}
+		},
+		"overrides": [
+			{
+				"files": [
+					"lambda-extension/bare/opt/internal/index.js"
+				],
+				"parserOptions": {
+					"ecmaVersion": 2020
+				}
+			}
+		]
 	},
 	"prettier": {
 		"printWidth": 100,
