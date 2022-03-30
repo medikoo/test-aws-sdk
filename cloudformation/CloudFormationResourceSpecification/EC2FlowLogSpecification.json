@@ -1,96 +1,92 @@
 {
-  "PropertyTypes": {
-    "Tag": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html",
-      "Properties": {
-        "Key": {
-          "Required": true,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-key",
-          "PrimitiveType": "String",
-          "UpdateType": "Mutable"
-        },
-        "Value": {
-          "Required": true,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-value",
-          "PrimitiveType": "String",
-          "UpdateType": "Mutable"
-        }
-      }
-    }
-  },
-  "ResourceType": {
-    "AWS::EC2::FlowLog": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html",
-      "Properties": {
-        "DeliverLogsPermissionArn": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-deliverlogspermissionarn",
-          "UpdateType": "Immutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "LogDestination": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-logdestination",
-          "UpdateType": "Immutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "LogDestinationType": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-logdestinationtype",
-          "UpdateType": "Immutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "LogFormat": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-logformat",
-          "UpdateType": "Immutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "LogGroupName": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-loggroupname",
-          "UpdateType": "Immutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "MaxAggregationInterval": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-maxaggregationinterval",
-          "UpdateType": "Immutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "ResourceId": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-resourceid",
-          "UpdateType": "Immutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "ResourceType": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-resourcetype",
-          "UpdateType": "Immutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "Tags": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-tags",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "List",
-          "ItemType": "Tag",
-          "DuplicatesAllowed": true
-        },
-        "TrafficType": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-traffictype",
-          "UpdateType": "Immutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        }
-      },
-      "Attributes": {
-        "Id": {
-          "PrimitiveType": "String"
-        }
-      }
-    }
-  },
-  "ResourceSpecificationVersion": "21.0.0"
+	"PropertyTypes": {
+		"Tag": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html",
+			"Properties": {
+				"Key": {
+					"Required": true,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-key",
+					"PrimitiveType": "String",
+					"UpdateType": "Mutable"
+				},
+				"Value": {
+					"Required": true,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-value",
+					"PrimitiveType": "String",
+					"UpdateType": "Mutable"
+				}
+			}
+		}
+	},
+	"ResourceType": {
+		"AWS::EC2::FlowLog": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html",
+			"Properties": {
+				"DeliverLogsPermissionArn": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-deliverlogspermissionarn",
+					"UpdateType": "Immutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"LogDestination": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-logdestination",
+					"UpdateType": "Immutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"LogDestinationType": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-logdestinationtype",
+					"UpdateType": "Immutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"LogFormat": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-logformat",
+					"UpdateType": "Immutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"LogGroupName": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-loggroupname",
+					"UpdateType": "Immutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"MaxAggregationInterval": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-maxaggregationinterval",
+					"UpdateType": "Immutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"ResourceId": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-resourceid",
+					"UpdateType": "Immutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"ResourceType": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-resourcetype",
+					"UpdateType": "Immutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"Tags": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-tags",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "List",
+					"ItemType": "Tag",
+					"DuplicatesAllowed": true
+				},
+				"TrafficType": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-traffictype",
+					"UpdateType": "Immutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				}
+			},
+			"Attributes": { "Id": { "PrimitiveType": "String" } }
+		}
+	},
+	"ResourceSpecificationVersion": "21.0.0"
 }

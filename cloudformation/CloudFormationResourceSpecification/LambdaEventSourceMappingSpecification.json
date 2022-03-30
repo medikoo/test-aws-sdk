@@ -1,158 +1,154 @@
 {
-  "PropertyTypes": {
-    "AWS::Lambda::EventSourceMapping.OnFailure": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-onfailure.html",
-      "Properties": {
-        "Destination": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-onfailure.html#cfn-lambda-eventsourcemapping-onfailure-destination",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::Lambda::EventSourceMapping.DestinationConfig": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-destinationconfig.html",
-      "Properties": {
-        "OnFailure": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-destinationconfig.html#cfn-lambda-eventsourcemapping-destinationconfig-onfailure",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "OnFailure"
-        }
-      }
-    },
-    "AWS::Lambda::EventSourceMapping.SourceAccessConfiguration": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-sourceaccessconfiguration.html",
-      "Properties": {
-        "Type": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-sourceaccessconfiguration.html#cfn-lambda-eventsourcemapping-sourceaccessconfiguration-type",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "URI": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-sourceaccessconfiguration.html#cfn-lambda-eventsourcemapping-sourceaccessconfiguration-uri",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        }
-      }
-    }
-  },
-  "ResourceType": {
-    "AWS::Lambda::EventSourceMapping": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html",
-      "Properties": {
-        "BatchSize": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-batchsize",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "BisectBatchOnFunctionError": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-bisectbatchonfunctionerror",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Boolean"
-        },
-        "DestinationConfig": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-destinationconfig",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "DestinationConfig"
-        },
-        "Enabled": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-enabled",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Boolean"
-        },
-        "EventSourceArn": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-eventsourcearn",
-          "UpdateType": "Immutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "FunctionName": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-functionname",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "MaximumBatchingWindowInSeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumbatchingwindowinseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "MaximumRecordAgeInSeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumrecordageinseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "MaximumRetryAttempts": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumretryattempts",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "ParallelizationFactor": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-parallelizationfactor",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "StartingPosition": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-startingposition",
-          "UpdateType": "Immutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "Topics": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-topics",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "List",
-          "PrimitiveItemType": "String",
-          "DuplicatesAllowed": false
-        },
-        "Queues": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-queues",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "List",
-          "PrimitiveItemType": "String",
-          "DuplicatesAllowed": false
-        },
-        "SourceAccessConfigurations": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-sourceaccessconfigurations",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "List",
-          "ItemType": "SourceAccessConfiguration",
-          "DuplicatesAllowed": false
-        },
-        "PartialBatchResponse": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-partialbatchresponse",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Boolean"
-        },
-        "TumblingWindowInSeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-tumblingwindowinseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        }
-      },
-      "Attributes": {
-        "Id": {
-          "PrimitiveType": "String"
-        }
-      }
-    }
-  },
-  "ResourceSpecificationVersion": "21.0.0"
+	"PropertyTypes": {
+		"AWS::Lambda::EventSourceMapping.OnFailure": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-onfailure.html",
+			"Properties": {
+				"Destination": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-onfailure.html#cfn-lambda-eventsourcemapping-onfailure-destination",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::Lambda::EventSourceMapping.DestinationConfig": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-destinationconfig.html",
+			"Properties": {
+				"OnFailure": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-destinationconfig.html#cfn-lambda-eventsourcemapping-destinationconfig-onfailure",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "OnFailure"
+				}
+			}
+		},
+		"AWS::Lambda::EventSourceMapping.SourceAccessConfiguration": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-sourceaccessconfiguration.html",
+			"Properties": {
+				"Type": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-sourceaccessconfiguration.html#cfn-lambda-eventsourcemapping-sourceaccessconfiguration-type",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"URI": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-eventsourcemapping-sourceaccessconfiguration.html#cfn-lambda-eventsourcemapping-sourceaccessconfiguration-uri",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				}
+			}
+		}
+	},
+	"ResourceType": {
+		"AWS::Lambda::EventSourceMapping": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html",
+			"Properties": {
+				"BatchSize": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-batchsize",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"BisectBatchOnFunctionError": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-bisectbatchonfunctionerror",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Boolean"
+				},
+				"DestinationConfig": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-destinationconfig",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "DestinationConfig"
+				},
+				"Enabled": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-enabled",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Boolean"
+				},
+				"EventSourceArn": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-eventsourcearn",
+					"UpdateType": "Immutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"FunctionName": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-functionname",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"MaximumBatchingWindowInSeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumbatchingwindowinseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"MaximumRecordAgeInSeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumrecordageinseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"MaximumRetryAttempts": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-maximumretryattempts",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"ParallelizationFactor": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-parallelizationfactor",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"StartingPosition": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-startingposition",
+					"UpdateType": "Immutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"Topics": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-topics",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "List",
+					"PrimitiveItemType": "String",
+					"DuplicatesAllowed": false
+				},
+				"Queues": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-queues",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "List",
+					"PrimitiveItemType": "String",
+					"DuplicatesAllowed": false
+				},
+				"SourceAccessConfigurations": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-sourceaccessconfigurations",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "List",
+					"ItemType": "SourceAccessConfiguration",
+					"DuplicatesAllowed": false
+				},
+				"PartialBatchResponse": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-partialbatchresponse",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Boolean"
+				},
+				"TumblingWindowInSeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-tumblingwindowinseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				}
+			},
+			"Attributes": { "Id": { "PrimitiveType": "String" } }
+		}
+	},
+	"ResourceSpecificationVersion": "21.0.0"
 }

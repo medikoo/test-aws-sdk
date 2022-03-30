@@ -1,42 +1,38 @@
 {
-  "ResourceType": {
-    "AWS::Events::Archive": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-archive.html",
-      "Properties": {
-        "SourceArn": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-archive.html#cfn-events-archive-sourcearn",
-          "UpdateType": "Immutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "Description": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-archive.html#cfn-events-archive-description",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "EventPattern": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-archive.html#cfn-events-archive-eventpattern",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Json"
-        },
-        "RetentionDays": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-archive.html#cfn-events-archive-retentiondays",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        }
-      },
-      "Attributes": {
-        "ArchiveName": {
-          "PrimitiveType": "String"
-        },
-        "Arn": {
-          "PrimitiveType": "String"
-        }
-      }
-    }
-  },
-  "ResourceSpecificationVersion": "21.0.0"
+	"ResourceType": {
+		"AWS::Events::Archive": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-archive.html",
+			"Properties": {
+				"SourceArn": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-archive.html#cfn-events-archive-sourcearn",
+					"UpdateType": "Immutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"Description": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-archive.html#cfn-events-archive-description",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"EventPattern": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-archive.html#cfn-events-archive-eventpattern",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Json"
+				},
+				"RetentionDays": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-archive.html#cfn-events-archive-retentiondays",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				}
+			},
+			"Attributes": {
+				"ArchiveName": { "PrimitiveType": "String" },
+				"Arn": { "PrimitiveType": "String" }
+			}
+		}
+	},
+	"ResourceSpecificationVersion": "21.0.0"
 }

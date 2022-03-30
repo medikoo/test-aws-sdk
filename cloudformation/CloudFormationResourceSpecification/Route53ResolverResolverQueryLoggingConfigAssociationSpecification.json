@@ -1,39 +1,29 @@
 {
-  "ResourceType": {
-    "AWS::Route53Resolver::ResolverQueryLoggingConfigAssociation": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverqueryloggingconfigassociation.html",
-      "Properties": {
-        "ResolverQueryLogConfigId": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverqueryloggingconfigassociation.html#cfn-route53resolver-resolverqueryloggingconfigassociation-resolverquerylogconfigid",
-          "UpdateType": "Immutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "ResourceId": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverqueryloggingconfigassociation.html#cfn-route53resolver-resolverqueryloggingconfigassociation-resourceid",
-          "UpdateType": "Immutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        }
-      },
-      "Attributes": {
-        "Id": {
-          "PrimitiveType": "String"
-        },
-        "Status": {
-          "PrimitiveType": "String"
-        },
-        "Error": {
-          "PrimitiveType": "String"
-        },
-        "ErrorMessage": {
-          "PrimitiveType": "String"
-        },
-        "CreationTime": {
-          "PrimitiveType": "String"
-        }
-      }
-    }
-  },
-  "ResourceSpecificationVersion": "21.0.0"
+	"ResourceType": {
+		"AWS::Route53Resolver::ResolverQueryLoggingConfigAssociation": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverqueryloggingconfigassociation.html",
+			"Properties": {
+				"ResolverQueryLogConfigId": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverqueryloggingconfigassociation.html#cfn-route53resolver-resolverqueryloggingconfigassociation-resolverquerylogconfigid",
+					"UpdateType": "Immutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"ResourceId": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverqueryloggingconfigassociation.html#cfn-route53resolver-resolverqueryloggingconfigassociation-resourceid",
+					"UpdateType": "Immutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				}
+			},
+			"Attributes": {
+				"Id": { "PrimitiveType": "String" },
+				"Status": { "PrimitiveType": "String" },
+				"Error": { "PrimitiveType": "String" },
+				"ErrorMessage": { "PrimitiveType": "String" },
+				"CreationTime": { "PrimitiveType": "String" }
+			}
+		}
+	},
+	"ResourceSpecificationVersion": "21.0.0"
 }

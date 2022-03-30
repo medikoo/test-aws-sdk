@@ -1,568 +1,564 @@
 {
-  "PropertyTypes": {
-    "AWS::MediaPackage::OriginEndpoint.Authorization": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-authorization.html",
-      "Properties": {
-        "SecretsRoleArn": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-authorization.html#cfn-mediapackage-originendpoint-authorization-secretsrolearn",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "CdnIdentifierSecret": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-authorization.html#cfn-mediapackage-originendpoint-authorization-cdnidentifiersecret",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::MediaPackage::OriginEndpoint.SpekeKeyProvider": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-spekekeyprovider.html",
-      "Properties": {
-        "ResourceId": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-spekekeyprovider.html#cfn-mediapackage-originendpoint-spekekeyprovider-resourceid",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "SystemIds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-spekekeyprovider.html#cfn-mediapackage-originendpoint-spekekeyprovider-systemids",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "Type": "List",
-          "PrimitiveItemType": "String"
-        },
-        "Url": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-spekekeyprovider.html#cfn-mediapackage-originendpoint-spekekeyprovider-url",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "RoleArn": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-spekekeyprovider.html#cfn-mediapackage-originendpoint-spekekeyprovider-rolearn",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "CertificateArn": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-spekekeyprovider.html#cfn-mediapackage-originendpoint-spekekeyprovider-certificatearn",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::MediaPackage::OriginEndpoint.HlsEncryption": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsencryption.html",
-      "Properties": {
-        "EncryptionMethod": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsencryption.html#cfn-mediapackage-originendpoint-hlsencryption-encryptionmethod",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "ConstantInitializationVector": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsencryption.html#cfn-mediapackage-originendpoint-hlsencryption-constantinitializationvector",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "KeyRotationIntervalSeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsencryption.html#cfn-mediapackage-originendpoint-hlsencryption-keyrotationintervalseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "RepeatExtXKey": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsencryption.html#cfn-mediapackage-originendpoint-hlsencryption-repeatextxkey",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Boolean"
-        },
-        "SpekeKeyProvider": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsencryption.html#cfn-mediapackage-originendpoint-hlsencryption-spekekeyprovider",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "Type": "SpekeKeyProvider"
-        }
-      }
-    },
-    "AWS::MediaPackage::OriginEndpoint.StreamSelection": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-streamselection.html",
-      "Properties": {
-        "MinVideoBitsPerSecond": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-streamselection.html#cfn-mediapackage-originendpoint-streamselection-minvideobitspersecond",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "MaxVideoBitsPerSecond": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-streamselection.html#cfn-mediapackage-originendpoint-streamselection-maxvideobitspersecond",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "StreamOrder": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-streamselection.html#cfn-mediapackage-originendpoint-streamselection-streamorder",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::MediaPackage::OriginEndpoint.HlsPackage": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html",
-      "Properties": {
-        "SegmentDurationSeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-segmentdurationseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "PlaylistWindowSeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-playlistwindowseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "PlaylistType": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-playlisttype",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "AdMarkers": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-admarkers",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "AdTriggers": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-adtriggers",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "List",
-          "PrimitiveItemType": "String"
-        },
-        "AdsOnDeliveryRestrictions": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-adsondeliveryrestrictions",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "ProgramDateTimeIntervalSeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-programdatetimeintervalseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "IncludeIframeOnlyStream": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-includeiframeonlystream",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Boolean"
-        },
-        "UseAudioRenditionGroup": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-useaudiorenditiongroup",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Boolean"
-        },
-        "Encryption": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-encryption",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "HlsEncryption"
-        },
-        "StreamSelection": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-streamselection",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "StreamSelection"
-        }
-      }
-    },
-    "AWS::MediaPackage::OriginEndpoint.DashEncryption": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashencryption.html",
-      "Properties": {
-        "KeyRotationIntervalSeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashencryption.html#cfn-mediapackage-originendpoint-dashencryption-keyrotationintervalseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "SpekeKeyProvider": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashencryption.html#cfn-mediapackage-originendpoint-dashencryption-spekekeyprovider",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "Type": "SpekeKeyProvider"
-        }
-      }
-    },
-    "AWS::MediaPackage::OriginEndpoint.DashPackage": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html",
-      "Properties": {
-        "SegmentDurationSeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-segmentdurationseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "ManifestWindowSeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-manifestwindowseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "Profile": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-profile",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "MinUpdatePeriodSeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-minupdateperiodseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "MinBufferTimeSeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-minbuffertimeseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "SuggestedPresentationDelaySeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-suggestedpresentationdelayseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "PeriodTriggers": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-periodtriggers",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "List",
-          "PrimitiveItemType": "String"
-        },
-        "ManifestLayout": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-manifestlayout",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "SegmentTemplateFormat": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-segmenttemplateformat",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "AdTriggers": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-adtriggers",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "List",
-          "PrimitiveItemType": "String"
-        },
-        "AdsOnDeliveryRestrictions": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-adsondeliveryrestrictions",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "Encryption": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-encryption",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "DashEncryption"
-        },
-        "StreamSelection": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-streamselection",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "StreamSelection"
-        }
-      }
-    },
-    "AWS::MediaPackage::OriginEndpoint.MssEncryption": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-mssencryption.html",
-      "Properties": {
-        "SpekeKeyProvider": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-mssencryption.html#cfn-mediapackage-originendpoint-mssencryption-spekekeyprovider",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "Type": "SpekeKeyProvider"
-        }
-      }
-    },
-    "AWS::MediaPackage::OriginEndpoint.MssPackage": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-msspackage.html",
-      "Properties": {
-        "ManifestWindowSeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-msspackage.html#cfn-mediapackage-originendpoint-msspackage-manifestwindowseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "SegmentDurationSeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-msspackage.html#cfn-mediapackage-originendpoint-msspackage-segmentdurationseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "Encryption": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-msspackage.html#cfn-mediapackage-originendpoint-msspackage-encryption",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "MssEncryption"
-        },
-        "StreamSelection": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-msspackage.html#cfn-mediapackage-originendpoint-msspackage-streamselection",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "StreamSelection"
-        }
-      }
-    },
-    "AWS::MediaPackage::OriginEndpoint.CmafEncryption": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-cmafencryption.html",
-      "Properties": {
-        "KeyRotationIntervalSeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-cmafencryption.html#cfn-mediapackage-originendpoint-cmafencryption-keyrotationintervalseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "SpekeKeyProvider": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-cmafencryption.html#cfn-mediapackage-originendpoint-cmafencryption-spekekeyprovider",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "Type": "SpekeKeyProvider"
-        }
-      }
-    },
-    "AWS::MediaPackage::OriginEndpoint.HlsManifest": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html",
-      "Properties": {
-        "Id": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-id",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "ManifestName": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-manifestname",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "Url": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-url",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "PlaylistWindowSeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-playlistwindowseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "PlaylistType": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-playlisttype",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "AdMarkers": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-admarkers",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "ProgramDateTimeIntervalSeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-programdatetimeintervalseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "IncludeIframeOnlyStream": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-includeiframeonlystream",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Boolean"
-        },
-        "AdTriggers": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-adtriggers",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "List",
-          "PrimitiveItemType": "String"
-        },
-        "AdsOnDeliveryRestrictions": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-adsondeliveryrestrictions",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::MediaPackage::OriginEndpoint.CmafPackage": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-cmafpackage.html",
-      "Properties": {
-        "SegmentDurationSeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-cmafpackage.html#cfn-mediapackage-originendpoint-cmafpackage-segmentdurationseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "SegmentPrefix": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-cmafpackage.html#cfn-mediapackage-originendpoint-cmafpackage-segmentprefix",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "Encryption": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-cmafpackage.html#cfn-mediapackage-originendpoint-cmafpackage-encryption",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "CmafEncryption"
-        },
-        "StreamSelection": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-cmafpackage.html#cfn-mediapackage-originendpoint-cmafpackage-streamselection",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "StreamSelection"
-        },
-        "HlsManifests": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-cmafpackage.html#cfn-mediapackage-originendpoint-cmafpackage-hlsmanifests",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "List",
-          "ItemType": "HlsManifest"
-        }
-      }
-    },
-    "Tag": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html",
-      "Properties": {
-        "Key": {
-          "Required": true,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-key",
-          "PrimitiveType": "String",
-          "UpdateType": "Mutable"
-        },
-        "Value": {
-          "Required": true,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-value",
-          "PrimitiveType": "String",
-          "UpdateType": "Mutable"
-        }
-      }
-    }
-  },
-  "ResourceType": {
-    "AWS::MediaPackage::OriginEndpoint": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html",
-      "Properties": {
-        "Id": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-id",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "ChannelId": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-channelid",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "Description": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-description",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "Whitelist": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-whitelist",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "List",
-          "PrimitiveItemType": "String"
-        },
-        "StartoverWindowSeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-startoverwindowseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "TimeDelaySeconds": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-timedelayseconds",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "ManifestName": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-manifestname",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "Origination": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-origination",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "Authorization": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-authorization",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "Authorization"
-        },
-        "HlsPackage": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-hlspackage",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "HlsPackage"
-        },
-        "DashPackage": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-dashpackage",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "DashPackage"
-        },
-        "MssPackage": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-msspackage",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "MssPackage"
-        },
-        "CmafPackage": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-cmafpackage",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "CmafPackage"
-        },
-        "Tags": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-tags",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "List",
-          "ItemType": "Tag",
-          "DuplicatesAllowed": false
-        }
-      },
-      "Attributes": {
-        "Arn": {
-          "PrimitiveType": "String"
-        },
-        "Url": {
-          "PrimitiveType": "String"
-        }
-      }
-    }
-  },
-  "ResourceSpecificationVersion": "21.0.0"
+	"PropertyTypes": {
+		"AWS::MediaPackage::OriginEndpoint.Authorization": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-authorization.html",
+			"Properties": {
+				"SecretsRoleArn": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-authorization.html#cfn-mediapackage-originendpoint-authorization-secretsrolearn",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"CdnIdentifierSecret": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-authorization.html#cfn-mediapackage-originendpoint-authorization-cdnidentifiersecret",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::MediaPackage::OriginEndpoint.SpekeKeyProvider": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-spekekeyprovider.html",
+			"Properties": {
+				"ResourceId": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-spekekeyprovider.html#cfn-mediapackage-originendpoint-spekekeyprovider-resourceid",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"SystemIds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-spekekeyprovider.html#cfn-mediapackage-originendpoint-spekekeyprovider-systemids",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"Type": "List",
+					"PrimitiveItemType": "String"
+				},
+				"Url": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-spekekeyprovider.html#cfn-mediapackage-originendpoint-spekekeyprovider-url",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"RoleArn": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-spekekeyprovider.html#cfn-mediapackage-originendpoint-spekekeyprovider-rolearn",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"CertificateArn": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-spekekeyprovider.html#cfn-mediapackage-originendpoint-spekekeyprovider-certificatearn",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::MediaPackage::OriginEndpoint.HlsEncryption": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsencryption.html",
+			"Properties": {
+				"EncryptionMethod": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsencryption.html#cfn-mediapackage-originendpoint-hlsencryption-encryptionmethod",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"ConstantInitializationVector": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsencryption.html#cfn-mediapackage-originendpoint-hlsencryption-constantinitializationvector",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"KeyRotationIntervalSeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsencryption.html#cfn-mediapackage-originendpoint-hlsencryption-keyrotationintervalseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"RepeatExtXKey": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsencryption.html#cfn-mediapackage-originendpoint-hlsencryption-repeatextxkey",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Boolean"
+				},
+				"SpekeKeyProvider": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsencryption.html#cfn-mediapackage-originendpoint-hlsencryption-spekekeyprovider",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"Type": "SpekeKeyProvider"
+				}
+			}
+		},
+		"AWS::MediaPackage::OriginEndpoint.StreamSelection": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-streamselection.html",
+			"Properties": {
+				"MinVideoBitsPerSecond": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-streamselection.html#cfn-mediapackage-originendpoint-streamselection-minvideobitspersecond",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"MaxVideoBitsPerSecond": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-streamselection.html#cfn-mediapackage-originendpoint-streamselection-maxvideobitspersecond",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"StreamOrder": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-streamselection.html#cfn-mediapackage-originendpoint-streamselection-streamorder",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::MediaPackage::OriginEndpoint.HlsPackage": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html",
+			"Properties": {
+				"SegmentDurationSeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-segmentdurationseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"PlaylistWindowSeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-playlistwindowseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"PlaylistType": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-playlisttype",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"AdMarkers": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-admarkers",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"AdTriggers": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-adtriggers",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "List",
+					"PrimitiveItemType": "String"
+				},
+				"AdsOnDeliveryRestrictions": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-adsondeliveryrestrictions",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"ProgramDateTimeIntervalSeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-programdatetimeintervalseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"IncludeIframeOnlyStream": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-includeiframeonlystream",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Boolean"
+				},
+				"UseAudioRenditionGroup": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-useaudiorenditiongroup",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Boolean"
+				},
+				"Encryption": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-encryption",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "HlsEncryption"
+				},
+				"StreamSelection": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlspackage.html#cfn-mediapackage-originendpoint-hlspackage-streamselection",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "StreamSelection"
+				}
+			}
+		},
+		"AWS::MediaPackage::OriginEndpoint.DashEncryption": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashencryption.html",
+			"Properties": {
+				"KeyRotationIntervalSeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashencryption.html#cfn-mediapackage-originendpoint-dashencryption-keyrotationintervalseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"SpekeKeyProvider": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashencryption.html#cfn-mediapackage-originendpoint-dashencryption-spekekeyprovider",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"Type": "SpekeKeyProvider"
+				}
+			}
+		},
+		"AWS::MediaPackage::OriginEndpoint.DashPackage": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html",
+			"Properties": {
+				"SegmentDurationSeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-segmentdurationseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"ManifestWindowSeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-manifestwindowseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"Profile": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-profile",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"MinUpdatePeriodSeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-minupdateperiodseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"MinBufferTimeSeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-minbuffertimeseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"SuggestedPresentationDelaySeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-suggestedpresentationdelayseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"PeriodTriggers": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-periodtriggers",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "List",
+					"PrimitiveItemType": "String"
+				},
+				"ManifestLayout": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-manifestlayout",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"SegmentTemplateFormat": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-segmenttemplateformat",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"AdTriggers": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-adtriggers",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "List",
+					"PrimitiveItemType": "String"
+				},
+				"AdsOnDeliveryRestrictions": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-adsondeliveryrestrictions",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"Encryption": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-encryption",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "DashEncryption"
+				},
+				"StreamSelection": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-dashpackage.html#cfn-mediapackage-originendpoint-dashpackage-streamselection",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "StreamSelection"
+				}
+			}
+		},
+		"AWS::MediaPackage::OriginEndpoint.MssEncryption": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-mssencryption.html",
+			"Properties": {
+				"SpekeKeyProvider": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-mssencryption.html#cfn-mediapackage-originendpoint-mssencryption-spekekeyprovider",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"Type": "SpekeKeyProvider"
+				}
+			}
+		},
+		"AWS::MediaPackage::OriginEndpoint.MssPackage": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-msspackage.html",
+			"Properties": {
+				"ManifestWindowSeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-msspackage.html#cfn-mediapackage-originendpoint-msspackage-manifestwindowseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"SegmentDurationSeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-msspackage.html#cfn-mediapackage-originendpoint-msspackage-segmentdurationseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"Encryption": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-msspackage.html#cfn-mediapackage-originendpoint-msspackage-encryption",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "MssEncryption"
+				},
+				"StreamSelection": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-msspackage.html#cfn-mediapackage-originendpoint-msspackage-streamselection",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "StreamSelection"
+				}
+			}
+		},
+		"AWS::MediaPackage::OriginEndpoint.CmafEncryption": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-cmafencryption.html",
+			"Properties": {
+				"KeyRotationIntervalSeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-cmafencryption.html#cfn-mediapackage-originendpoint-cmafencryption-keyrotationintervalseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"SpekeKeyProvider": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-cmafencryption.html#cfn-mediapackage-originendpoint-cmafencryption-spekekeyprovider",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"Type": "SpekeKeyProvider"
+				}
+			}
+		},
+		"AWS::MediaPackage::OriginEndpoint.HlsManifest": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html",
+			"Properties": {
+				"Id": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-id",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"ManifestName": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-manifestname",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"Url": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-url",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"PlaylistWindowSeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-playlistwindowseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"PlaylistType": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-playlisttype",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"AdMarkers": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-admarkers",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"ProgramDateTimeIntervalSeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-programdatetimeintervalseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"IncludeIframeOnlyStream": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-includeiframeonlystream",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Boolean"
+				},
+				"AdTriggers": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-adtriggers",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "List",
+					"PrimitiveItemType": "String"
+				},
+				"AdsOnDeliveryRestrictions": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-hlsmanifest.html#cfn-mediapackage-originendpoint-hlsmanifest-adsondeliveryrestrictions",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::MediaPackage::OriginEndpoint.CmafPackage": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-cmafpackage.html",
+			"Properties": {
+				"SegmentDurationSeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-cmafpackage.html#cfn-mediapackage-originendpoint-cmafpackage-segmentdurationseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"SegmentPrefix": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-cmafpackage.html#cfn-mediapackage-originendpoint-cmafpackage-segmentprefix",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"Encryption": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-cmafpackage.html#cfn-mediapackage-originendpoint-cmafpackage-encryption",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "CmafEncryption"
+				},
+				"StreamSelection": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-cmafpackage.html#cfn-mediapackage-originendpoint-cmafpackage-streamselection",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "StreamSelection"
+				},
+				"HlsManifests": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-mediapackage-originendpoint-cmafpackage.html#cfn-mediapackage-originendpoint-cmafpackage-hlsmanifests",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "List",
+					"ItemType": "HlsManifest"
+				}
+			}
+		},
+		"Tag": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html",
+			"Properties": {
+				"Key": {
+					"Required": true,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-key",
+					"PrimitiveType": "String",
+					"UpdateType": "Mutable"
+				},
+				"Value": {
+					"Required": true,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-value",
+					"PrimitiveType": "String",
+					"UpdateType": "Mutable"
+				}
+			}
+		}
+	},
+	"ResourceType": {
+		"AWS::MediaPackage::OriginEndpoint": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html",
+			"Properties": {
+				"Id": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-id",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"ChannelId": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-channelid",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"Description": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-description",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"Whitelist": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-whitelist",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "List",
+					"PrimitiveItemType": "String"
+				},
+				"StartoverWindowSeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-startoverwindowseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"TimeDelaySeconds": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-timedelayseconds",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"ManifestName": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-manifestname",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"Origination": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-origination",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"Authorization": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-authorization",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "Authorization"
+				},
+				"HlsPackage": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-hlspackage",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "HlsPackage"
+				},
+				"DashPackage": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-dashpackage",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "DashPackage"
+				},
+				"MssPackage": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-msspackage",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "MssPackage"
+				},
+				"CmafPackage": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-cmafpackage",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "CmafPackage"
+				},
+				"Tags": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediapackage-originendpoint.html#cfn-mediapackage-originendpoint-tags",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "List",
+					"ItemType": "Tag",
+					"DuplicatesAllowed": false
+				}
+			},
+			"Attributes": {
+				"Arn": { "PrimitiveType": "String" },
+				"Url": { "PrimitiveType": "String" }
+			}
+		}
+	},
+	"ResourceSpecificationVersion": "21.0.0"
 }

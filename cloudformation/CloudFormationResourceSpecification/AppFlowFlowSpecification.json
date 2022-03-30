@@ -1,811 +1,807 @@
 {
-  "PropertyTypes": {
-    "AWS::AppFlow::Flow.ScheduledTriggerProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-scheduledtriggerproperties.html",
-      "Properties": {
-        "ScheduleExpression": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-scheduledtriggerproperties.html#cfn-appflow-flow-scheduledtriggerproperties-scheduleexpression",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "DataPullMode": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-scheduledtriggerproperties.html#cfn-appflow-flow-scheduledtriggerproperties-datapullmode",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "ScheduleStartTime": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-scheduledtriggerproperties.html#cfn-appflow-flow-scheduledtriggerproperties-schedulestarttime",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Double"
-        },
-        "ScheduleEndTime": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-scheduledtriggerproperties.html#cfn-appflow-flow-scheduledtriggerproperties-scheduleendtime",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Double"
-        },
-        "TimeZone": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-scheduledtriggerproperties.html#cfn-appflow-flow-scheduledtriggerproperties-timezone",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.TriggerConfig": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-triggerconfig.html",
-      "Properties": {
-        "TriggerType": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-triggerconfig.html#cfn-appflow-flow-triggerconfig-triggertype",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "TriggerProperties": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-triggerconfig.html#cfn-appflow-flow-triggerconfig-triggerproperties",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "ScheduledTriggerProperties"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.AmplitudeSourceProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-amplitudesourceproperties.html",
-      "Properties": {
-        "Object": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-amplitudesourceproperties.html#cfn-appflow-flow-amplitudesourceproperties-object",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.DatadogSourceProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-datadogsourceproperties.html",
-      "Properties": {
-        "Object": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-datadogsourceproperties.html#cfn-appflow-flow-datadogsourceproperties-object",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.DynatraceSourceProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-dynatracesourceproperties.html",
-      "Properties": {
-        "Object": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-dynatracesourceproperties.html#cfn-appflow-flow-dynatracesourceproperties-object",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.GoogleAnalyticsSourceProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-googleanalyticssourceproperties.html",
-      "Properties": {
-        "Object": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-googleanalyticssourceproperties.html#cfn-appflow-flow-googleanalyticssourceproperties-object",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.InforNexusSourceProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-infornexussourceproperties.html",
-      "Properties": {
-        "Object": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-infornexussourceproperties.html#cfn-appflow-flow-infornexussourceproperties-object",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.MarketoSourceProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-marketosourceproperties.html",
-      "Properties": {
-        "Object": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-marketosourceproperties.html#cfn-appflow-flow-marketosourceproperties-object",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.S3SourceProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3sourceproperties.html",
-      "Properties": {
-        "BucketName": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3sourceproperties.html#cfn-appflow-flow-s3sourceproperties-bucketname",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "BucketPrefix": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3sourceproperties.html#cfn-appflow-flow-s3sourceproperties-bucketprefix",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.SalesforceSourceProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-salesforcesourceproperties.html",
-      "Properties": {
-        "Object": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-salesforcesourceproperties.html#cfn-appflow-flow-salesforcesourceproperties-object",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "EnableDynamicFieldUpdate": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-salesforcesourceproperties.html#cfn-appflow-flow-salesforcesourceproperties-enabledynamicfieldupdate",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Boolean"
-        },
-        "IncludeDeletedRecords": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-salesforcesourceproperties.html#cfn-appflow-flow-salesforcesourceproperties-includedeletedrecords",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Boolean"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.ServiceNowSourceProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-servicenowsourceproperties.html",
-      "Properties": {
-        "Object": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-servicenowsourceproperties.html#cfn-appflow-flow-servicenowsourceproperties-object",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.SingularSourceProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-singularsourceproperties.html",
-      "Properties": {
-        "Object": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-singularsourceproperties.html#cfn-appflow-flow-singularsourceproperties-object",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.SlackSourceProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-slacksourceproperties.html",
-      "Properties": {
-        "Object": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-slacksourceproperties.html#cfn-appflow-flow-slacksourceproperties-object",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.TrendmicroSourceProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-trendmicrosourceproperties.html",
-      "Properties": {
-        "Object": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-trendmicrosourceproperties.html#cfn-appflow-flow-trendmicrosourceproperties-object",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.VeevaSourceProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-veevasourceproperties.html",
-      "Properties": {
-        "Object": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-veevasourceproperties.html#cfn-appflow-flow-veevasourceproperties-object",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.ZendeskSourceProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-zendesksourceproperties.html",
-      "Properties": {
-        "Object": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-zendesksourceproperties.html#cfn-appflow-flow-zendesksourceproperties-object",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.SourceConnectorProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html",
-      "Properties": {
-        "Amplitude": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-amplitude",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "AmplitudeSourceProperties"
-        },
-        "Datadog": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-datadog",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "DatadogSourceProperties"
-        },
-        "Dynatrace": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-dynatrace",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "DynatraceSourceProperties"
-        },
-        "GoogleAnalytics": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-googleanalytics",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "GoogleAnalyticsSourceProperties"
-        },
-        "InforNexus": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-infornexus",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "InforNexusSourceProperties"
-        },
-        "Marketo": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-marketo",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "MarketoSourceProperties"
-        },
-        "S3": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-s3",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "S3SourceProperties"
-        },
-        "Salesforce": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-salesforce",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "SalesforceSourceProperties"
-        },
-        "ServiceNow": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-servicenow",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "ServiceNowSourceProperties"
-        },
-        "Singular": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-singular",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "SingularSourceProperties"
-        },
-        "Slack": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-slack",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "SlackSourceProperties"
-        },
-        "Trendmicro": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-trendmicro",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "TrendmicroSourceProperties"
-        },
-        "Veeva": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-veeva",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "VeevaSourceProperties"
-        },
-        "Zendesk": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-zendesk",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "ZendeskSourceProperties"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.SourceFlowConfig": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceflowconfig.html",
-      "Properties": {
-        "ConnectorType": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceflowconfig.html#cfn-appflow-flow-sourceflowconfig-connectortype",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "ConnectorProfileName": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceflowconfig.html#cfn-appflow-flow-sourceflowconfig-connectorprofilename",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "SourceConnectorProperties": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceflowconfig.html#cfn-appflow-flow-sourceflowconfig-sourceconnectorproperties",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "Type": "SourceConnectorProperties"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.ErrorHandlingConfig": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-errorhandlingconfig.html",
-      "Properties": {
-        "FailOnFirstError": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-errorhandlingconfig.html#cfn-appflow-flow-errorhandlingconfig-failonfirsterror",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Boolean"
-        },
-        "BucketPrefix": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-errorhandlingconfig.html#cfn-appflow-flow-errorhandlingconfig-bucketprefix",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "BucketName": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-errorhandlingconfig.html#cfn-appflow-flow-errorhandlingconfig-bucketname",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.RedshiftDestinationProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-redshiftdestinationproperties.html",
-      "Properties": {
-        "Object": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-redshiftdestinationproperties.html#cfn-appflow-flow-redshiftdestinationproperties-object",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "IntermediateBucketName": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-redshiftdestinationproperties.html#cfn-appflow-flow-redshiftdestinationproperties-intermediatebucketname",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "BucketPrefix": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-redshiftdestinationproperties.html#cfn-appflow-flow-redshiftdestinationproperties-bucketprefix",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "ErrorHandlingConfig": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-redshiftdestinationproperties.html#cfn-appflow-flow-redshiftdestinationproperties-errorhandlingconfig",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "ErrorHandlingConfig"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.PrefixConfig": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-prefixconfig.html",
-      "Properties": {
-        "PrefixType": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-prefixconfig.html#cfn-appflow-flow-prefixconfig-prefixtype",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "PrefixFormat": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-prefixconfig.html#cfn-appflow-flow-prefixconfig-prefixformat",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.AggregationConfig": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-aggregationconfig.html",
-      "Properties": {
-        "AggregationType": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-aggregationconfig.html#cfn-appflow-flow-aggregationconfig-aggregationtype",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.S3OutputFormatConfig": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3outputformatconfig.html",
-      "Properties": {
-        "FileType": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3outputformatconfig.html#cfn-appflow-flow-s3outputformatconfig-filetype",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "PrefixConfig": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3outputformatconfig.html#cfn-appflow-flow-s3outputformatconfig-prefixconfig",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "PrefixConfig"
-        },
-        "AggregationConfig": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3outputformatconfig.html#cfn-appflow-flow-s3outputformatconfig-aggregationconfig",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "AggregationConfig"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.S3DestinationProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3destinationproperties.html",
-      "Properties": {
-        "BucketName": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3destinationproperties.html#cfn-appflow-flow-s3destinationproperties-bucketname",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "BucketPrefix": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3destinationproperties.html#cfn-appflow-flow-s3destinationproperties-bucketprefix",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "S3OutputFormatConfig": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3destinationproperties.html#cfn-appflow-flow-s3destinationproperties-s3outputformatconfig",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "S3OutputFormatConfig"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.SalesforceDestinationProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-salesforcedestinationproperties.html",
-      "Properties": {
-        "Object": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-salesforcedestinationproperties.html#cfn-appflow-flow-salesforcedestinationproperties-object",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "ErrorHandlingConfig": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-salesforcedestinationproperties.html#cfn-appflow-flow-salesforcedestinationproperties-errorhandlingconfig",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "ErrorHandlingConfig"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.SnowflakeDestinationProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-snowflakedestinationproperties.html",
-      "Properties": {
-        "Object": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-snowflakedestinationproperties.html#cfn-appflow-flow-snowflakedestinationproperties-object",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "IntermediateBucketName": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-snowflakedestinationproperties.html#cfn-appflow-flow-snowflakedestinationproperties-intermediatebucketname",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "BucketPrefix": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-snowflakedestinationproperties.html#cfn-appflow-flow-snowflakedestinationproperties-bucketprefix",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "ErrorHandlingConfig": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-snowflakedestinationproperties.html#cfn-appflow-flow-snowflakedestinationproperties-errorhandlingconfig",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "ErrorHandlingConfig"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.EventBridgeDestinationProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-eventbridgedestinationproperties.html",
-      "Properties": {
-        "Object": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-eventbridgedestinationproperties.html#cfn-appflow-flow-eventbridgedestinationproperties-object",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "ErrorHandlingConfig": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-eventbridgedestinationproperties.html#cfn-appflow-flow-eventbridgedestinationproperties-errorhandlingconfig",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "ErrorHandlingConfig"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.DestinationConnectorProperties": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationconnectorproperties.html",
-      "Properties": {
-        "Redshift": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationconnectorproperties.html#cfn-appflow-flow-destinationconnectorproperties-redshift",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "RedshiftDestinationProperties"
-        },
-        "S3": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationconnectorproperties.html#cfn-appflow-flow-destinationconnectorproperties-s3",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "S3DestinationProperties"
-        },
-        "Salesforce": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationconnectorproperties.html#cfn-appflow-flow-destinationconnectorproperties-salesforce",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "SalesforceDestinationProperties"
-        },
-        "Snowflake": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationconnectorproperties.html#cfn-appflow-flow-destinationconnectorproperties-snowflake",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "SnowflakeDestinationProperties"
-        },
-        "EventBridge": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationconnectorproperties.html#cfn-appflow-flow-destinationconnectorproperties-eventbridge",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "EventBridgeDestinationProperties"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.DestinationFlowConfig": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationflowconfig.html",
-      "Properties": {
-        "ConnectorType": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationflowconfig.html#cfn-appflow-flow-destinationflowconfig-connectortype",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "ConnectorProfileName": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationflowconfig.html#cfn-appflow-flow-destinationflowconfig-connectorprofilename",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "DestinationConnectorProperties": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationflowconfig.html#cfn-appflow-flow-destinationflowconfig-destinationconnectorproperties",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "Type": "DestinationConnectorProperties"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.ConnectorOperator": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html",
-      "Properties": {
-        "Amplitude": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-amplitude",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "Datadog": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-datadog",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "Dynatrace": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-dynatrace",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "GoogleAnalytics": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-googleanalytics",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "InforNexus": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-infornexus",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "Marketo": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-marketo",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "S3": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-s3",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "Salesforce": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-salesforce",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "ServiceNow": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-servicenow",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "Singular": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-singular",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "Slack": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-slack",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "Trendmicro": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-trendmicro",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "Veeva": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-veeva",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "Zendesk": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-zendesk",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.TaskPropertiesObject": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-taskpropertiesobject.html",
-      "Properties": {
-        "Key": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-taskpropertiesobject.html#cfn-appflow-flow-taskpropertiesobject-key",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "Value": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-taskpropertiesobject.html#cfn-appflow-flow-taskpropertiesobject-value",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::AppFlow::Flow.Task": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-task.html",
-      "Properties": {
-        "SourceFields": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-task.html#cfn-appflow-flow-task-sourcefields",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "Type": "List",
-          "PrimitiveItemType": "String"
-        },
-        "ConnectorOperator": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-task.html#cfn-appflow-flow-task-connectoroperator",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "ConnectorOperator"
-        },
-        "DestinationField": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-task.html#cfn-appflow-flow-task-destinationfield",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "TaskType": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-task.html#cfn-appflow-flow-task-tasktype",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "TaskProperties": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-task.html#cfn-appflow-flow-task-taskproperties",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "List",
-          "ItemType": "TaskPropertiesObject"
-        }
-      }
-    },
-    "Tag": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html",
-      "Properties": {
-        "Key": {
-          "Required": true,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-key",
-          "PrimitiveType": "String",
-          "UpdateType": "Mutable"
-        },
-        "Value": {
-          "Required": true,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-value",
-          "PrimitiveType": "String",
-          "UpdateType": "Mutable"
-        }
-      }
-    }
-  },
-  "ResourceType": {
-    "AWS::AppFlow::Flow": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html",
-      "Properties": {
-        "FlowName": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html#cfn-appflow-flow-flowname",
-          "UpdateType": "Immutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "Description": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html#cfn-appflow-flow-description",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "KMSArn": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html#cfn-appflow-flow-kmsarn",
-          "UpdateType": "Immutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "TriggerConfig": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html#cfn-appflow-flow-triggerconfig",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "Type": "TriggerConfig"
-        },
-        "SourceFlowConfig": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html#cfn-appflow-flow-sourceflowconfig",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "Type": "SourceFlowConfig"
-        },
-        "DestinationFlowConfigList": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html#cfn-appflow-flow-destinationflowconfiglist",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "Type": "List",
-          "ItemType": "DestinationFlowConfig"
-        },
-        "Tasks": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html#cfn-appflow-flow-tasks",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "Type": "List",
-          "ItemType": "Task"
-        },
-        "Tags": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html#cfn-appflow-flow-tags",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "List",
-          "ItemType": "Tag"
-        }
-      },
-      "Attributes": {
-        "FlowArn": {
-          "PrimitiveType": "String"
-        }
-      }
-    }
-  },
-  "ResourceSpecificationVersion": "21.0.0"
+	"PropertyTypes": {
+		"AWS::AppFlow::Flow.ScheduledTriggerProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-scheduledtriggerproperties.html",
+			"Properties": {
+				"ScheduleExpression": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-scheduledtriggerproperties.html#cfn-appflow-flow-scheduledtriggerproperties-scheduleexpression",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"DataPullMode": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-scheduledtriggerproperties.html#cfn-appflow-flow-scheduledtriggerproperties-datapullmode",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"ScheduleStartTime": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-scheduledtriggerproperties.html#cfn-appflow-flow-scheduledtriggerproperties-schedulestarttime",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Double"
+				},
+				"ScheduleEndTime": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-scheduledtriggerproperties.html#cfn-appflow-flow-scheduledtriggerproperties-scheduleendtime",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Double"
+				},
+				"TimeZone": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-scheduledtriggerproperties.html#cfn-appflow-flow-scheduledtriggerproperties-timezone",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.TriggerConfig": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-triggerconfig.html",
+			"Properties": {
+				"TriggerType": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-triggerconfig.html#cfn-appflow-flow-triggerconfig-triggertype",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"TriggerProperties": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-triggerconfig.html#cfn-appflow-flow-triggerconfig-triggerproperties",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "ScheduledTriggerProperties"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.AmplitudeSourceProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-amplitudesourceproperties.html",
+			"Properties": {
+				"Object": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-amplitudesourceproperties.html#cfn-appflow-flow-amplitudesourceproperties-object",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.DatadogSourceProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-datadogsourceproperties.html",
+			"Properties": {
+				"Object": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-datadogsourceproperties.html#cfn-appflow-flow-datadogsourceproperties-object",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.DynatraceSourceProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-dynatracesourceproperties.html",
+			"Properties": {
+				"Object": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-dynatracesourceproperties.html#cfn-appflow-flow-dynatracesourceproperties-object",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.GoogleAnalyticsSourceProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-googleanalyticssourceproperties.html",
+			"Properties": {
+				"Object": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-googleanalyticssourceproperties.html#cfn-appflow-flow-googleanalyticssourceproperties-object",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.InforNexusSourceProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-infornexussourceproperties.html",
+			"Properties": {
+				"Object": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-infornexussourceproperties.html#cfn-appflow-flow-infornexussourceproperties-object",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.MarketoSourceProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-marketosourceproperties.html",
+			"Properties": {
+				"Object": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-marketosourceproperties.html#cfn-appflow-flow-marketosourceproperties-object",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.S3SourceProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3sourceproperties.html",
+			"Properties": {
+				"BucketName": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3sourceproperties.html#cfn-appflow-flow-s3sourceproperties-bucketname",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"BucketPrefix": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3sourceproperties.html#cfn-appflow-flow-s3sourceproperties-bucketprefix",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.SalesforceSourceProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-salesforcesourceproperties.html",
+			"Properties": {
+				"Object": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-salesforcesourceproperties.html#cfn-appflow-flow-salesforcesourceproperties-object",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"EnableDynamicFieldUpdate": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-salesforcesourceproperties.html#cfn-appflow-flow-salesforcesourceproperties-enabledynamicfieldupdate",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Boolean"
+				},
+				"IncludeDeletedRecords": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-salesforcesourceproperties.html#cfn-appflow-flow-salesforcesourceproperties-includedeletedrecords",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Boolean"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.ServiceNowSourceProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-servicenowsourceproperties.html",
+			"Properties": {
+				"Object": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-servicenowsourceproperties.html#cfn-appflow-flow-servicenowsourceproperties-object",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.SingularSourceProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-singularsourceproperties.html",
+			"Properties": {
+				"Object": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-singularsourceproperties.html#cfn-appflow-flow-singularsourceproperties-object",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.SlackSourceProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-slacksourceproperties.html",
+			"Properties": {
+				"Object": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-slacksourceproperties.html#cfn-appflow-flow-slacksourceproperties-object",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.TrendmicroSourceProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-trendmicrosourceproperties.html",
+			"Properties": {
+				"Object": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-trendmicrosourceproperties.html#cfn-appflow-flow-trendmicrosourceproperties-object",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.VeevaSourceProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-veevasourceproperties.html",
+			"Properties": {
+				"Object": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-veevasourceproperties.html#cfn-appflow-flow-veevasourceproperties-object",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.ZendeskSourceProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-zendesksourceproperties.html",
+			"Properties": {
+				"Object": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-zendesksourceproperties.html#cfn-appflow-flow-zendesksourceproperties-object",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.SourceConnectorProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html",
+			"Properties": {
+				"Amplitude": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-amplitude",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "AmplitudeSourceProperties"
+				},
+				"Datadog": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-datadog",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "DatadogSourceProperties"
+				},
+				"Dynatrace": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-dynatrace",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "DynatraceSourceProperties"
+				},
+				"GoogleAnalytics": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-googleanalytics",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "GoogleAnalyticsSourceProperties"
+				},
+				"InforNexus": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-infornexus",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "InforNexusSourceProperties"
+				},
+				"Marketo": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-marketo",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "MarketoSourceProperties"
+				},
+				"S3": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-s3",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "S3SourceProperties"
+				},
+				"Salesforce": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-salesforce",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "SalesforceSourceProperties"
+				},
+				"ServiceNow": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-servicenow",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "ServiceNowSourceProperties"
+				},
+				"Singular": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-singular",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "SingularSourceProperties"
+				},
+				"Slack": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-slack",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "SlackSourceProperties"
+				},
+				"Trendmicro": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-trendmicro",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "TrendmicroSourceProperties"
+				},
+				"Veeva": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-veeva",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "VeevaSourceProperties"
+				},
+				"Zendesk": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceconnectorproperties.html#cfn-appflow-flow-sourceconnectorproperties-zendesk",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "ZendeskSourceProperties"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.SourceFlowConfig": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceflowconfig.html",
+			"Properties": {
+				"ConnectorType": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceflowconfig.html#cfn-appflow-flow-sourceflowconfig-connectortype",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"ConnectorProfileName": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceflowconfig.html#cfn-appflow-flow-sourceflowconfig-connectorprofilename",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"SourceConnectorProperties": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-sourceflowconfig.html#cfn-appflow-flow-sourceflowconfig-sourceconnectorproperties",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"Type": "SourceConnectorProperties"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.ErrorHandlingConfig": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-errorhandlingconfig.html",
+			"Properties": {
+				"FailOnFirstError": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-errorhandlingconfig.html#cfn-appflow-flow-errorhandlingconfig-failonfirsterror",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Boolean"
+				},
+				"BucketPrefix": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-errorhandlingconfig.html#cfn-appflow-flow-errorhandlingconfig-bucketprefix",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"BucketName": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-errorhandlingconfig.html#cfn-appflow-flow-errorhandlingconfig-bucketname",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.RedshiftDestinationProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-redshiftdestinationproperties.html",
+			"Properties": {
+				"Object": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-redshiftdestinationproperties.html#cfn-appflow-flow-redshiftdestinationproperties-object",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"IntermediateBucketName": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-redshiftdestinationproperties.html#cfn-appflow-flow-redshiftdestinationproperties-intermediatebucketname",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"BucketPrefix": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-redshiftdestinationproperties.html#cfn-appflow-flow-redshiftdestinationproperties-bucketprefix",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"ErrorHandlingConfig": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-redshiftdestinationproperties.html#cfn-appflow-flow-redshiftdestinationproperties-errorhandlingconfig",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "ErrorHandlingConfig"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.PrefixConfig": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-prefixconfig.html",
+			"Properties": {
+				"PrefixType": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-prefixconfig.html#cfn-appflow-flow-prefixconfig-prefixtype",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"PrefixFormat": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-prefixconfig.html#cfn-appflow-flow-prefixconfig-prefixformat",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.AggregationConfig": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-aggregationconfig.html",
+			"Properties": {
+				"AggregationType": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-aggregationconfig.html#cfn-appflow-flow-aggregationconfig-aggregationtype",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.S3OutputFormatConfig": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3outputformatconfig.html",
+			"Properties": {
+				"FileType": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3outputformatconfig.html#cfn-appflow-flow-s3outputformatconfig-filetype",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"PrefixConfig": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3outputformatconfig.html#cfn-appflow-flow-s3outputformatconfig-prefixconfig",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "PrefixConfig"
+				},
+				"AggregationConfig": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3outputformatconfig.html#cfn-appflow-flow-s3outputformatconfig-aggregationconfig",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "AggregationConfig"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.S3DestinationProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3destinationproperties.html",
+			"Properties": {
+				"BucketName": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3destinationproperties.html#cfn-appflow-flow-s3destinationproperties-bucketname",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"BucketPrefix": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3destinationproperties.html#cfn-appflow-flow-s3destinationproperties-bucketprefix",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"S3OutputFormatConfig": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-s3destinationproperties.html#cfn-appflow-flow-s3destinationproperties-s3outputformatconfig",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "S3OutputFormatConfig"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.SalesforceDestinationProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-salesforcedestinationproperties.html",
+			"Properties": {
+				"Object": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-salesforcedestinationproperties.html#cfn-appflow-flow-salesforcedestinationproperties-object",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"ErrorHandlingConfig": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-salesforcedestinationproperties.html#cfn-appflow-flow-salesforcedestinationproperties-errorhandlingconfig",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "ErrorHandlingConfig"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.SnowflakeDestinationProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-snowflakedestinationproperties.html",
+			"Properties": {
+				"Object": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-snowflakedestinationproperties.html#cfn-appflow-flow-snowflakedestinationproperties-object",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"IntermediateBucketName": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-snowflakedestinationproperties.html#cfn-appflow-flow-snowflakedestinationproperties-intermediatebucketname",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"BucketPrefix": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-snowflakedestinationproperties.html#cfn-appflow-flow-snowflakedestinationproperties-bucketprefix",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"ErrorHandlingConfig": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-snowflakedestinationproperties.html#cfn-appflow-flow-snowflakedestinationproperties-errorhandlingconfig",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "ErrorHandlingConfig"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.EventBridgeDestinationProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-eventbridgedestinationproperties.html",
+			"Properties": {
+				"Object": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-eventbridgedestinationproperties.html#cfn-appflow-flow-eventbridgedestinationproperties-object",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"ErrorHandlingConfig": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-eventbridgedestinationproperties.html#cfn-appflow-flow-eventbridgedestinationproperties-errorhandlingconfig",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "ErrorHandlingConfig"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.DestinationConnectorProperties": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationconnectorproperties.html",
+			"Properties": {
+				"Redshift": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationconnectorproperties.html#cfn-appflow-flow-destinationconnectorproperties-redshift",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "RedshiftDestinationProperties"
+				},
+				"S3": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationconnectorproperties.html#cfn-appflow-flow-destinationconnectorproperties-s3",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "S3DestinationProperties"
+				},
+				"Salesforce": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationconnectorproperties.html#cfn-appflow-flow-destinationconnectorproperties-salesforce",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "SalesforceDestinationProperties"
+				},
+				"Snowflake": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationconnectorproperties.html#cfn-appflow-flow-destinationconnectorproperties-snowflake",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "SnowflakeDestinationProperties"
+				},
+				"EventBridge": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationconnectorproperties.html#cfn-appflow-flow-destinationconnectorproperties-eventbridge",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "EventBridgeDestinationProperties"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.DestinationFlowConfig": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationflowconfig.html",
+			"Properties": {
+				"ConnectorType": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationflowconfig.html#cfn-appflow-flow-destinationflowconfig-connectortype",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"ConnectorProfileName": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationflowconfig.html#cfn-appflow-flow-destinationflowconfig-connectorprofilename",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"DestinationConnectorProperties": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-destinationflowconfig.html#cfn-appflow-flow-destinationflowconfig-destinationconnectorproperties",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"Type": "DestinationConnectorProperties"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.ConnectorOperator": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html",
+			"Properties": {
+				"Amplitude": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-amplitude",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"Datadog": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-datadog",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"Dynatrace": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-dynatrace",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"GoogleAnalytics": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-googleanalytics",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"InforNexus": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-infornexus",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"Marketo": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-marketo",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"S3": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-s3",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"Salesforce": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-salesforce",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"ServiceNow": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-servicenow",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"Singular": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-singular",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"Slack": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-slack",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"Trendmicro": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-trendmicro",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"Veeva": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-veeva",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"Zendesk": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-connectoroperator.html#cfn-appflow-flow-connectoroperator-zendesk",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.TaskPropertiesObject": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-taskpropertiesobject.html",
+			"Properties": {
+				"Key": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-taskpropertiesobject.html#cfn-appflow-flow-taskpropertiesobject-key",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"Value": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-taskpropertiesobject.html#cfn-appflow-flow-taskpropertiesobject-value",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::AppFlow::Flow.Task": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-task.html",
+			"Properties": {
+				"SourceFields": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-task.html#cfn-appflow-flow-task-sourcefields",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"Type": "List",
+					"PrimitiveItemType": "String"
+				},
+				"ConnectorOperator": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-task.html#cfn-appflow-flow-task-connectoroperator",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "ConnectorOperator"
+				},
+				"DestinationField": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-task.html#cfn-appflow-flow-task-destinationfield",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"TaskType": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-task.html#cfn-appflow-flow-task-tasktype",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"TaskProperties": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appflow-flow-task.html#cfn-appflow-flow-task-taskproperties",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "List",
+					"ItemType": "TaskPropertiesObject"
+				}
+			}
+		},
+		"Tag": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html",
+			"Properties": {
+				"Key": {
+					"Required": true,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-key",
+					"PrimitiveType": "String",
+					"UpdateType": "Mutable"
+				},
+				"Value": {
+					"Required": true,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-value",
+					"PrimitiveType": "String",
+					"UpdateType": "Mutable"
+				}
+			}
+		}
+	},
+	"ResourceType": {
+		"AWS::AppFlow::Flow": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html",
+			"Properties": {
+				"FlowName": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html#cfn-appflow-flow-flowname",
+					"UpdateType": "Immutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"Description": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html#cfn-appflow-flow-description",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"KMSArn": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html#cfn-appflow-flow-kmsarn",
+					"UpdateType": "Immutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"TriggerConfig": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html#cfn-appflow-flow-triggerconfig",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"Type": "TriggerConfig"
+				},
+				"SourceFlowConfig": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html#cfn-appflow-flow-sourceflowconfig",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"Type": "SourceFlowConfig"
+				},
+				"DestinationFlowConfigList": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html#cfn-appflow-flow-destinationflowconfiglist",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"Type": "List",
+					"ItemType": "DestinationFlowConfig"
+				},
+				"Tasks": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html#cfn-appflow-flow-tasks",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"Type": "List",
+					"ItemType": "Task"
+				},
+				"Tags": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appflow-flow.html#cfn-appflow-flow-tags",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "List",
+					"ItemType": "Tag"
+				}
+			},
+			"Attributes": { "FlowArn": { "PrimitiveType": "String" } }
+		}
+	},
+	"ResourceSpecificationVersion": "21.0.0"
 }

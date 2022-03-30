@@ -1,384 +1,384 @@
 {
-  "PropertyTypes": {
-    "AWS::EC2::EC2Fleet.OnDemandOptionsRequest": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html",
-      "Properties": {
-        "SingleAvailabilityZone": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html#cfn-ec2-ec2fleet-ondemandoptionsrequest-singleavailabilityzone",
-          "PrimitiveType": "Boolean",
-          "UpdateType": "Immutable"
-        },
-        "AllocationStrategy": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html#cfn-ec2-ec2fleet-ondemandoptionsrequest-allocationstrategy",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "SingleInstanceType": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html#cfn-ec2-ec2fleet-ondemandoptionsrequest-singleinstancetype",
-          "PrimitiveType": "Boolean",
-          "UpdateType": "Immutable"
-        },
-        "MinTargetCapacity": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html#cfn-ec2-ec2fleet-ondemandoptionsrequest-mintargetcapacity",
-          "PrimitiveType": "Integer",
-          "UpdateType": "Immutable"
-        },
-        "MaxTotalPrice": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html#cfn-ec2-ec2fleet-ondemandoptionsrequest-maxtotalprice",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "CapacityReservationOptions": {
-          "Type": "CapacityReservationOptionsRequest",
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html#cfn-ec2-ec2fleet-ondemandoptionsrequest-capacityreservationoptions",
-          "UpdateType": "Immutable"
-        }
-      }
-    },
-    "AWS::EC2::EC2Fleet.CapacityReservationOptionsRequest": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-capacityreservationoptionsrequest.html",
-      "Properties": {
-        "UsageStrategy": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-capacityreservationoptionsrequest.html#cfn-ec2-ec2fleet-capacityreservationoptionsrequest-usagestrategy",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        }
-      }
-    },
-    "AWS::EC2::EC2Fleet.SpotOptionsRequest": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html",
-      "Properties": {
-        "SingleAvailabilityZone": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-singleavailabilityzone",
-          "PrimitiveType": "Boolean",
-          "UpdateType": "Immutable"
-        },
-        "AllocationStrategy": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-allocationstrategy",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "SingleInstanceType": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-singleinstancetype",
-          "PrimitiveType": "Boolean",
-          "UpdateType": "Immutable"
-        },
-        "MinTargetCapacity": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-mintargetcapacity",
-          "PrimitiveType": "Integer",
-          "UpdateType": "Immutable"
-        },
-        "MaxTotalPrice": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-maxtotalprice",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "InstanceInterruptionBehavior": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-instanceinterruptionbehavior",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "InstancePoolsToUseCount": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-instancepoolstousecount",
-          "PrimitiveType": "Integer",
-          "UpdateType": "Immutable"
-        }
-      }
-    },
-    "AWS::EC2::EC2Fleet.TagSpecification": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-tagspecification.html",
-      "Properties": {
-        "ResourceType": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-tagspecification.html#cfn-ec2-ec2fleet-tagspecification-resourcetype",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "Tags": {
-          "Type": "List",
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-tagspecification.html#cfn-ec2-ec2fleet-tagspecification-tags",
-          "ItemType": "Tag",
-          "UpdateType": "Immutable"
-        }
-      }
-    },
-    "AWS::EC2::EC2Fleet.TargetCapacitySpecificationRequest": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html",
-      "Properties": {
-        "DefaultTargetCapacityType": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html#cfn-ec2-ec2fleet-targetcapacityspecificationrequest-defaulttargetcapacitytype",
-          "PrimitiveType": "String",
-          "UpdateType": "Mutable"
-        },
-        "TotalTargetCapacity": {
-          "Required": true,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html#cfn-ec2-ec2fleet-targetcapacityspecificationrequest-totaltargetcapacity",
-          "PrimitiveType": "Integer",
-          "UpdateType": "Mutable"
-        },
-        "OnDemandTargetCapacity": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html#cfn-ec2-ec2fleet-targetcapacityspecificationrequest-ondemandtargetcapacity",
-          "PrimitiveType": "Integer",
-          "UpdateType": "Mutable"
-        },
-        "SpotTargetCapacity": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html#cfn-ec2-ec2fleet-targetcapacityspecificationrequest-spottargetcapacity",
-          "PrimitiveType": "Integer",
-          "UpdateType": "Mutable"
-        }
-      }
-    },
-    "AWS::EC2::EC2Fleet.FleetLaunchTemplateConfigRequest": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest.html",
-      "Properties": {
-        "LaunchTemplateSpecification": {
-          "Type": "FleetLaunchTemplateSpecificationRequest",
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-launchtemplatespecification",
-          "UpdateType": "Immutable"
-        },
-        "Overrides": {
-          "Type": "List",
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-overrides",
-          "ItemType": "FleetLaunchTemplateOverridesRequest",
-          "UpdateType": "Immutable"
-        }
-      }
-    },
-    "AWS::EC2::EC2Fleet.FleetLaunchTemplateOverridesRequest": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html",
-      "Properties": {
-        "WeightedCapacity": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-weightedcapacity",
-          "PrimitiveType": "Double",
-          "UpdateType": "Immutable"
-        },
-        "Placement": {
-          "Type": "Placement",
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-placement",
-          "UpdateType": "Immutable"
-        },
-        "Priority": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-priority",
-          "PrimitiveType": "Double",
-          "UpdateType": "Immutable"
-        },
-        "AvailabilityZone": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-availabilityzone",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "SubnetId": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-subnetid",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "InstanceType": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-instancetype",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "MaxPrice": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-maxprice",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        }
-      }
-    },
-    "AWS::EC2::EC2Fleet.Placement": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html",
-      "Properties": {
-        "GroupName": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-groupname",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "Tenancy": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-tenancy",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "SpreadDomain": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-spreaddomain",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "PartitionNumber": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-partitionnumber",
-          "PrimitiveType": "Integer",
-          "UpdateType": "Immutable"
-        },
-        "AvailabilityZone": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-availabilityzone",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "Affinity": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-affinity",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "HostId": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-hostid",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "HostResourceGroupArn": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-hostresourcegrouparn",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        }
-      }
-    },
-    "Tag": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html",
-      "Properties": {
-        "Key": {
-          "Required": true,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-key",
-          "PrimitiveType": "String",
-          "UpdateType": "Mutable"
-        },
-        "Value": {
-          "Required": true,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-value",
-          "PrimitiveType": "String",
-          "UpdateType": "Mutable"
-        }
-      }
-    },
-    "AWS::EC2::EC2Fleet.FleetLaunchTemplateSpecificationRequest": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest.html",
-      "Properties": {
-        "LaunchTemplateName": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest-launchtemplatename",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "Version": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest-version",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "LaunchTemplateId": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest-launchtemplateid",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        }
-      }
-    }
-  },
-  "ResourceType": {
-    "AWS::EC2::EC2Fleet": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html",
-      "Properties": {
-        "TargetCapacitySpecification": {
-          "Type": "TargetCapacitySpecificationRequest",
-          "Required": true,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-targetcapacityspecification",
-          "UpdateType": "Mutable"
-        },
-        "OnDemandOptions": {
-          "Type": "OnDemandOptionsRequest",
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-ondemandoptions",
-          "UpdateType": "Immutable"
-        },
-        "Type": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-type",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "ExcessCapacityTerminationPolicy": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-excesscapacityterminationpolicy",
-          "PrimitiveType": "String",
-          "UpdateType": "Mutable"
-        },
-        "TagSpecifications": {
-          "Type": "List",
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-tagspecifications",
-          "ItemType": "TagSpecification",
-          "UpdateType": "Immutable"
-        },
-        "SpotOptions": {
-          "Type": "SpotOptionsRequest",
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-spotoptions",
-          "UpdateType": "Immutable"
-        },
-        "ValidFrom": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-validfrom",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "ReplaceUnhealthyInstances": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-replaceunhealthyinstances",
-          "PrimitiveType": "Boolean",
-          "UpdateType": "Immutable"
-        },
-        "LaunchTemplateConfigs": {
-          "Type": "List",
-          "Required": true,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-launchtemplateconfigs",
-          "ItemType": "FleetLaunchTemplateConfigRequest",
-          "UpdateType": "Immutable"
-        },
-        "TerminateInstancesWithExpiration": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-terminateinstanceswithexpiration",
-          "PrimitiveType": "Boolean",
-          "UpdateType": "Immutable"
-        },
-        "ValidUntil": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-validuntil",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        }
-      }
-    }
-  },
-  "ResourceSpecificationVersion": "21.0.0"
+	"PropertyTypes": {
+		"AWS::EC2::EC2Fleet.OnDemandOptionsRequest": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html",
+			"Properties": {
+				"SingleAvailabilityZone": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html#cfn-ec2-ec2fleet-ondemandoptionsrequest-singleavailabilityzone",
+					"PrimitiveType": "Boolean",
+					"UpdateType": "Immutable"
+				},
+				"AllocationStrategy": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html#cfn-ec2-ec2fleet-ondemandoptionsrequest-allocationstrategy",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"SingleInstanceType": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html#cfn-ec2-ec2fleet-ondemandoptionsrequest-singleinstancetype",
+					"PrimitiveType": "Boolean",
+					"UpdateType": "Immutable"
+				},
+				"MinTargetCapacity": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html#cfn-ec2-ec2fleet-ondemandoptionsrequest-mintargetcapacity",
+					"PrimitiveType": "Integer",
+					"UpdateType": "Immutable"
+				},
+				"MaxTotalPrice": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html#cfn-ec2-ec2fleet-ondemandoptionsrequest-maxtotalprice",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"CapacityReservationOptions": {
+					"Type": "CapacityReservationOptionsRequest",
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html#cfn-ec2-ec2fleet-ondemandoptionsrequest-capacityreservationoptions",
+					"UpdateType": "Immutable"
+				}
+			}
+		},
+		"AWS::EC2::EC2Fleet.CapacityReservationOptionsRequest": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-capacityreservationoptionsrequest.html",
+			"Properties": {
+				"UsageStrategy": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-capacityreservationoptionsrequest.html#cfn-ec2-ec2fleet-capacityreservationoptionsrequest-usagestrategy",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				}
+			}
+		},
+		"AWS::EC2::EC2Fleet.SpotOptionsRequest": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html",
+			"Properties": {
+				"SingleAvailabilityZone": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-singleavailabilityzone",
+					"PrimitiveType": "Boolean",
+					"UpdateType": "Immutable"
+				},
+				"AllocationStrategy": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-allocationstrategy",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"SingleInstanceType": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-singleinstancetype",
+					"PrimitiveType": "Boolean",
+					"UpdateType": "Immutable"
+				},
+				"MinTargetCapacity": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-mintargetcapacity",
+					"PrimitiveType": "Integer",
+					"UpdateType": "Immutable"
+				},
+				"MaxTotalPrice": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-maxtotalprice",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"InstanceInterruptionBehavior": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-instanceinterruptionbehavior",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"InstancePoolsToUseCount": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-instancepoolstousecount",
+					"PrimitiveType": "Integer",
+					"UpdateType": "Immutable"
+				}
+			}
+		},
+		"AWS::EC2::EC2Fleet.TagSpecification": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-tagspecification.html",
+			"Properties": {
+				"ResourceType": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-tagspecification.html#cfn-ec2-ec2fleet-tagspecification-resourcetype",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"Tags": {
+					"Type": "List",
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-tagspecification.html#cfn-ec2-ec2fleet-tagspecification-tags",
+					"ItemType": "Tag",
+					"UpdateType": "Immutable"
+				}
+			}
+		},
+		"AWS::EC2::EC2Fleet.TargetCapacitySpecificationRequest": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html",
+			"Properties": {
+				"DefaultTargetCapacityType": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html#cfn-ec2-ec2fleet-targetcapacityspecificationrequest-defaulttargetcapacitytype",
+					"PrimitiveType": "String",
+					"UpdateType": "Mutable"
+				},
+				"TotalTargetCapacity": {
+					"Required": true,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html#cfn-ec2-ec2fleet-targetcapacityspecificationrequest-totaltargetcapacity",
+					"PrimitiveType": "Integer",
+					"UpdateType": "Mutable"
+				},
+				"OnDemandTargetCapacity": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html#cfn-ec2-ec2fleet-targetcapacityspecificationrequest-ondemandtargetcapacity",
+					"PrimitiveType": "Integer",
+					"UpdateType": "Mutable"
+				},
+				"SpotTargetCapacity": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html#cfn-ec2-ec2fleet-targetcapacityspecificationrequest-spottargetcapacity",
+					"PrimitiveType": "Integer",
+					"UpdateType": "Mutable"
+				}
+			}
+		},
+		"AWS::EC2::EC2Fleet.FleetLaunchTemplateConfigRequest": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest.html",
+			"Properties": {
+				"LaunchTemplateSpecification": {
+					"Type": "FleetLaunchTemplateSpecificationRequest",
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-launchtemplatespecification",
+					"UpdateType": "Immutable"
+				},
+				"Overrides": {
+					"Type": "List",
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-overrides",
+					"ItemType": "FleetLaunchTemplateOverridesRequest",
+					"UpdateType": "Immutable"
+				}
+			}
+		},
+		"AWS::EC2::EC2Fleet.FleetLaunchTemplateOverridesRequest": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html",
+			"Properties": {
+				"WeightedCapacity": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-weightedcapacity",
+					"PrimitiveType": "Double",
+					"UpdateType": "Immutable"
+				},
+				"Placement": {
+					"Type": "Placement",
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-placement",
+					"UpdateType": "Immutable"
+				},
+				"Priority": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-priority",
+					"PrimitiveType": "Double",
+					"UpdateType": "Immutable"
+				},
+				"AvailabilityZone": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-availabilityzone",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"SubnetId": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-subnetid",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"InstanceType": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-instancetype",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"MaxPrice": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-maxprice",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				}
+			}
+		},
+		"AWS::EC2::EC2Fleet.Placement": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html",
+			"Properties": {
+				"GroupName": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-groupname",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"Tenancy": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-tenancy",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"SpreadDomain": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-spreaddomain",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"PartitionNumber": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-partitionnumber",
+					"PrimitiveType": "Integer",
+					"UpdateType": "Immutable"
+				},
+				"AvailabilityZone": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-availabilityzone",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"Affinity": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-affinity",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"HostId": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-hostid",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"HostResourceGroupArn": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-placement.html#cfn-ec2-ec2fleet-placement-hostresourcegrouparn",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				}
+			}
+		},
+		"Tag": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html",
+			"Properties": {
+				"Key": {
+					"Required": true,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-key",
+					"PrimitiveType": "String",
+					"UpdateType": "Mutable"
+				},
+				"Value": {
+					"Required": true,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-value",
+					"PrimitiveType": "String",
+					"UpdateType": "Mutable"
+				}
+			}
+		},
+		"AWS::EC2::EC2Fleet.FleetLaunchTemplateSpecificationRequest": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest.html",
+			"Properties": {
+				"LaunchTemplateName": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest-launchtemplatename",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"Version": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest-version",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"LaunchTemplateId": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest-launchtemplateid",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				}
+			}
+		}
+	},
+	"ResourceType": {
+		"AWS::EC2::EC2Fleet": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html",
+			"Properties": {
+				"TargetCapacitySpecification": {
+					"Type": "TargetCapacitySpecificationRequest",
+					"Required": true,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-targetcapacityspecification",
+					"UpdateType": "Mutable"
+				},
+				"OnDemandOptions": {
+					"Type": "OnDemandOptionsRequest",
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-ondemandoptions",
+					"UpdateType": "Immutable"
+				},
+				"Type": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-type",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"ExcessCapacityTerminationPolicy": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-excesscapacityterminationpolicy",
+					"PrimitiveType": "String",
+					"UpdateType": "Mutable"
+				},
+				"TagSpecifications": {
+					"Type": "List",
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-tagspecifications",
+					"ItemType": "TagSpecification",
+					"UpdateType": "Immutable"
+				},
+				"SpotOptions": {
+					"Type": "SpotOptionsRequest",
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-spotoptions",
+					"UpdateType": "Immutable"
+				},
+				"ValidFrom": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-validfrom",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"ReplaceUnhealthyInstances": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-replaceunhealthyinstances",
+					"PrimitiveType": "Boolean",
+					"UpdateType": "Immutable"
+				},
+				"LaunchTemplateConfigs": {
+					"Type": "List",
+					"Required": true,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-launchtemplateconfigs",
+					"ItemType": "FleetLaunchTemplateConfigRequest",
+					"UpdateType": "Immutable"
+				},
+				"TerminateInstancesWithExpiration": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-terminateinstanceswithexpiration",
+					"PrimitiveType": "Boolean",
+					"UpdateType": "Immutable"
+				},
+				"ValidUntil": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-validuntil",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				}
+			}
+		}
+	},
+	"ResourceSpecificationVersion": "21.0.0"
 }

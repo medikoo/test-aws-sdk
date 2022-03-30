@@ -1,176 +1,176 @@
 {
-  "PropertyTypes": {
-    "AWS::DataBrew::Job.S3Location": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-databrew-job-s3location.html",
-      "Properties": {
-        "Bucket": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-databrew-job-s3location.html#cfn-databrew-job-s3location-bucket",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "Key": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-databrew-job-s3location.html#cfn-databrew-job-s3location-key",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        }
-      }
-    },
-    "AWS::DataBrew::Job.Output": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-databrew-job-output.html",
-      "Properties": {
-        "CompressionFormat": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-databrew-job-output.html#cfn-databrew-job-output-compressionformat",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "Format": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-databrew-job-output.html#cfn-databrew-job-output-format",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "PartitionColumns": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-databrew-job-output.html#cfn-databrew-job-output-partitioncolumns",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "List",
-          "PrimitiveItemType": "String",
-          "DuplicatesAllowed": false
-        },
-        "Location": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-databrew-job-output.html#cfn-databrew-job-output-location",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "Type": "S3Location"
-        },
-        "Overwrite": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-databrew-job-output.html#cfn-databrew-job-output-overwrite",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Boolean"
-        }
-      }
-    },
-    "Tag": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html",
-      "Properties": {
-        "Key": {
-          "Required": true,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-key",
-          "PrimitiveType": "String",
-          "UpdateType": "Mutable"
-        },
-        "Value": {
-          "Required": true,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-value",
-          "PrimitiveType": "String",
-          "UpdateType": "Mutable"
-        }
-      }
-    }
-  },
-  "ResourceType": {
-    "AWS::DataBrew::Job": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html",
-      "Properties": {
-        "DatasetName": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-datasetname",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "EncryptionKeyArn": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-encryptionkeyarn",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "EncryptionMode": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-encryptionmode",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "Name": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-name",
-          "UpdateType": "Immutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "Type": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-type",
-          "UpdateType": "Immutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "LogSubscription": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-logsubscription",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "MaxCapacity": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-maxcapacity",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "MaxRetries": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-maxretries",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        },
-        "Outputs": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-outputs",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "Type": "List",
-          "ItemType": "Output"
-        },
-        "OutputLocation": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-outputlocation",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Json"
-        },
-        "ProjectName": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-projectname",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "String"
-        },
-        "Recipe": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-recipe",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Json"
-        },
-        "RoleArn": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-rolearn",
-          "UpdateType": "Mutable",
-          "Required": true,
-          "PrimitiveType": "String"
-        },
-        "Tags": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-tags",
-          "UpdateType": "Immutable",
-          "Required": false,
-          "Type": "List",
-          "ItemType": "Tag",
-          "DuplicatesAllowed": true
-        },
-        "Timeout": {
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-timeout",
-          "UpdateType": "Mutable",
-          "Required": false,
-          "PrimitiveType": "Integer"
-        }
-      }
-    }
-  },
-  "ResourceSpecificationVersion": "21.0.0"
+	"PropertyTypes": {
+		"AWS::DataBrew::Job.S3Location": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-databrew-job-s3location.html",
+			"Properties": {
+				"Bucket": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-databrew-job-s3location.html#cfn-databrew-job-s3location-bucket",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"Key": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-databrew-job-s3location.html#cfn-databrew-job-s3location-key",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				}
+			}
+		},
+		"AWS::DataBrew::Job.Output": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-databrew-job-output.html",
+			"Properties": {
+				"CompressionFormat": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-databrew-job-output.html#cfn-databrew-job-output-compressionformat",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"Format": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-databrew-job-output.html#cfn-databrew-job-output-format",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"PartitionColumns": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-databrew-job-output.html#cfn-databrew-job-output-partitioncolumns",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "List",
+					"PrimitiveItemType": "String",
+					"DuplicatesAllowed": false
+				},
+				"Location": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-databrew-job-output.html#cfn-databrew-job-output-location",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"Type": "S3Location"
+				},
+				"Overwrite": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-databrew-job-output.html#cfn-databrew-job-output-overwrite",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Boolean"
+				}
+			}
+		},
+		"Tag": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html",
+			"Properties": {
+				"Key": {
+					"Required": true,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-key",
+					"PrimitiveType": "String",
+					"UpdateType": "Mutable"
+				},
+				"Value": {
+					"Required": true,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-value",
+					"PrimitiveType": "String",
+					"UpdateType": "Mutable"
+				}
+			}
+		}
+	},
+	"ResourceType": {
+		"AWS::DataBrew::Job": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html",
+			"Properties": {
+				"DatasetName": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-datasetname",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"EncryptionKeyArn": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-encryptionkeyarn",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"EncryptionMode": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-encryptionmode",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"Name": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-name",
+					"UpdateType": "Immutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"Type": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-type",
+					"UpdateType": "Immutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"LogSubscription": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-logsubscription",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"MaxCapacity": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-maxcapacity",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"MaxRetries": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-maxretries",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				},
+				"Outputs": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-outputs",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"Type": "List",
+					"ItemType": "Output"
+				},
+				"OutputLocation": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-outputlocation",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Json"
+				},
+				"ProjectName": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-projectname",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "String"
+				},
+				"Recipe": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-recipe",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Json"
+				},
+				"RoleArn": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-rolearn",
+					"UpdateType": "Mutable",
+					"Required": true,
+					"PrimitiveType": "String"
+				},
+				"Tags": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-tags",
+					"UpdateType": "Immutable",
+					"Required": false,
+					"Type": "List",
+					"ItemType": "Tag",
+					"DuplicatesAllowed": true
+				},
+				"Timeout": {
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-databrew-job.html#cfn-databrew-job-timeout",
+					"UpdateType": "Mutable",
+					"Required": false,
+					"PrimitiveType": "Integer"
+				}
+			}
+		}
+	},
+	"ResourceSpecificationVersion": "21.0.0"
 }

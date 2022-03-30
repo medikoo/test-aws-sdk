@@ -1,94 +1,77 @@
 {
-  "PropertyTypes": {
-    "AWS::Amplify::Domain.SubDomainSetting": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-domain-subdomainsetting.html",
-      "Properties": {
-        "Prefix": {
-          "Required": true,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-domain-subdomainsetting.html#cfn-amplify-domain-subdomainsetting-prefix",
-          "PrimitiveType": "String",
-          "UpdateType": "Mutable"
-        },
-        "BranchName": {
-          "Required": true,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-domain-subdomainsetting.html#cfn-amplify-domain-subdomainsetting-branchname",
-          "PrimitiveType": "String",
-          "UpdateType": "Mutable"
-        }
-      }
-    }
-  },
-  "ResourceType": {
-    "AWS::Amplify::Domain": {
-      "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-domain.html",
-      "Attributes": {
-        "AutoSubDomainIAMRole": {
-          "PrimitiveType": "String"
-        },
-        "DomainName": {
-          "PrimitiveType": "String"
-        },
-        "StatusReason": {
-          "PrimitiveType": "String"
-        },
-        "EnableAutoSubDomain": {
-          "PrimitiveType": "Boolean"
-        },
-        "Arn": {
-          "PrimitiveType": "String"
-        },
-        "DomainStatus": {
-          "PrimitiveType": "String"
-        },
-        "AutoSubDomainCreationPatterns": {
-          "PrimitiveItemType": "String",
-          "Type": "List"
-        },
-        "CertificateRecord": {
-          "PrimitiveType": "String"
-        }
-      },
-      "Properties": {
-        "SubDomainSettings": {
-          "Type": "List",
-          "Required": true,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-domain.html#cfn-amplify-domain-subdomainsettings",
-          "ItemType": "SubDomainSetting",
-          "UpdateType": "Mutable"
-        },
-        "AppId": {
-          "Required": true,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-domain.html#cfn-amplify-domain-appid",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "AutoSubDomainIAMRole": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-domain.html#cfn-amplify-domain-autosubdomainiamrole",
-          "PrimitiveType": "String",
-          "UpdateType": "Mutable"
-        },
-        "DomainName": {
-          "Required": true,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-domain.html#cfn-amplify-domain-domainname",
-          "PrimitiveType": "String",
-          "UpdateType": "Immutable"
-        },
-        "EnableAutoSubDomain": {
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-domain.html#cfn-amplify-domain-enableautosubdomain",
-          "PrimitiveType": "Boolean",
-          "UpdateType": "Mutable"
-        },
-        "AutoSubDomainCreationPatterns": {
-          "PrimitiveItemType": "String",
-          "Type": "List",
-          "Required": false,
-          "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-domain.html#cfn-amplify-domain-autosubdomaincreationpatterns",
-          "UpdateType": "Mutable"
-        }
-      }
-    }
-  },
-  "ResourceSpecificationVersion": "21.0.0"
+	"PropertyTypes": {
+		"AWS::Amplify::Domain.SubDomainSetting": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-domain-subdomainsetting.html",
+			"Properties": {
+				"Prefix": {
+					"Required": true,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-domain-subdomainsetting.html#cfn-amplify-domain-subdomainsetting-prefix",
+					"PrimitiveType": "String",
+					"UpdateType": "Mutable"
+				},
+				"BranchName": {
+					"Required": true,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amplify-domain-subdomainsetting.html#cfn-amplify-domain-subdomainsetting-branchname",
+					"PrimitiveType": "String",
+					"UpdateType": "Mutable"
+				}
+			}
+		}
+	},
+	"ResourceType": {
+		"AWS::Amplify::Domain": {
+			"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-domain.html",
+			"Attributes": {
+				"AutoSubDomainIAMRole": { "PrimitiveType": "String" },
+				"DomainName": { "PrimitiveType": "String" },
+				"StatusReason": { "PrimitiveType": "String" },
+				"EnableAutoSubDomain": { "PrimitiveType": "Boolean" },
+				"Arn": { "PrimitiveType": "String" },
+				"DomainStatus": { "PrimitiveType": "String" },
+				"AutoSubDomainCreationPatterns": { "PrimitiveItemType": "String", "Type": "List" },
+				"CertificateRecord": { "PrimitiveType": "String" }
+			},
+			"Properties": {
+				"SubDomainSettings": {
+					"Type": "List",
+					"Required": true,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-domain.html#cfn-amplify-domain-subdomainsettings",
+					"ItemType": "SubDomainSetting",
+					"UpdateType": "Mutable"
+				},
+				"AppId": {
+					"Required": true,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-domain.html#cfn-amplify-domain-appid",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"AutoSubDomainIAMRole": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-domain.html#cfn-amplify-domain-autosubdomainiamrole",
+					"PrimitiveType": "String",
+					"UpdateType": "Mutable"
+				},
+				"DomainName": {
+					"Required": true,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-domain.html#cfn-amplify-domain-domainname",
+					"PrimitiveType": "String",
+					"UpdateType": "Immutable"
+				},
+				"EnableAutoSubDomain": {
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-domain.html#cfn-amplify-domain-enableautosubdomain",
+					"PrimitiveType": "Boolean",
+					"UpdateType": "Mutable"
+				},
+				"AutoSubDomainCreationPatterns": {
+					"PrimitiveItemType": "String",
+					"Type": "List",
+					"Required": false,
+					"Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amplify-domain.html#cfn-amplify-domain-autosubdomaincreationpatterns",
+					"UpdateType": "Mutable"
+				}
+			}
+		}
+	},
+	"ResourceSpecificationVersion": "21.0.0"
 }
