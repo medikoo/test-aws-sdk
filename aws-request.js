@@ -23,20 +23,22 @@ module.exports = function awsRequest(service, method, ...args) {
 	const requestId = ++lastAwsRequestId;
 	awsLog.notice("[%d] %o %s %O", requestId, service, method, args);
 	const instance = getServiceInstance(service);
-	return instance[method](...args).promise().then(
-		result => {
-			awsLog.notice("[%d] %O", requestId, result);
-			return result;
-		},
-		error => {
-			awsLog.notice("[%d] %O", requestId, error);
-			if (error.statusCode !== 403 && error.retryable) {
-				awsLog.debug("[%d] retry", requestId);
-				return wait(4000 + Math.random() * 3000).then(() =>
-					awsRequest(service, method, ...args)
-				);
+	return instance[method](...args)
+		.promise()
+		.then(
+			result => {
+				awsLog.notice("[%d] %O", requestId, result);
+				return result;
+			},
+			error => {
+				awsLog.notice("[%d] %O", requestId, error);
+				if (error.statusCode !== 403 && error.retryable) {
+					awsLog.debug("[%d] retry", requestId);
+					return wait(4000 + Math.random() * 3000).then(() =>
+						awsRequest(service, method, ...args)
+					);
+				}
+				throw error;
 			}
-			throw error;
-		}
-	);
+		);
 };
