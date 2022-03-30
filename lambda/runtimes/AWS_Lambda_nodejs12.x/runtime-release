@@ -1,0 +1,4 @@
+NAME=Node.js
+VERSION=12.22.11-6234574d
+LOGGING=amzn-stdout-tlv
+

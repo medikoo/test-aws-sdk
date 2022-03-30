@@ -1,0 +1,4 @@
+NAME=Node.js
+VERSION=14.18.3-620e5c7d
+LOGGING=amzn-stdout-tlv
+
