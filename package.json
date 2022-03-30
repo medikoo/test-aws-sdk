@@ -40,6 +40,9 @@
 	"eslintConfig": {
 		"extends": "medikoo/node",
 		"root": true,
+		"ignorePatterns": [
+			"/lambda/runtimes/**/*.js"
+		],
 		"rules": {
 			"max-lines": "off",
 			"no-await-in-loop": "off",
